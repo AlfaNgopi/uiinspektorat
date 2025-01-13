@@ -29,7 +29,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+            <a class="navbar-brand" href="#page-top"><img src="../src/assets/inspektorat-logo.png" alt="..." /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -39,8 +39,8 @@
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#">Survey</a></li>
 
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link " data-bs-toggle="dropdown" aria-expanded="false" href="#"> Profile </a>
+                    <li class="nav-item dropdownhover">
+                        <a class="nav-link " aria-expanded="false" href="#"> Profile </a>
 
 
                         <ul class="dropdown-menu dropdown-menu-dark">
@@ -55,22 +55,28 @@
                     </li>
 
 
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link " data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                    <li class="nav-item dropdownhover ">
+                        <a class="nav-link " aria-expanded="false" href="#">
                             Regulasi Tematik
                         </a>
 
 
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li class="nav-item nav-link"><a class="dropdown-item" href="#">Audit</a></li>
+                            <li class="nav-item nav-link dropdownhover2">
+                                <a class="dropdown-item" href="#">Audit
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li class="nav-item nav-link"><a class="dropdown-item" href="#">Regulasi Pemeriksaan Desa</a></li>
+                                    </ul>
+                                </a>
+                            </li>
                             <li class="nav-item nav-link"><a class="dropdown-item" href="#">Reviu</a></li>
                             <li class="nav-item nav-link"><a class="dropdown-item" href="#">Evaluasi</a></li>
 
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link " data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                    <li class="nav-item"><a class="nav-link" href="#">Galeri</a></li>
+                    <li class="nav-item dropdownhover ">
+                        <a class="nav-link " aria-expanded="false" href="#">
                             Video
                         </a>
 
@@ -82,8 +88,8 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Download</a></li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link " data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                    <li class="nav-item dropdownhover ">
+                        <a class="nav-link " aria-expanded="false" href="#">
                             Berita
                         </a>
 
@@ -99,23 +105,19 @@
 
                         </ul>
                     </li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link " data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                    <li class="nav-item dropdownhover ">
+                        <a class="nav-link " aria-expanded="false" href="#">
                             Informasi Publik
                         </a>
-
-
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li class="nav-item nav-link"><a class="dropdown-item" href="#">Berkala</a></li>
                             <li class="nav-item nav-link"><a class="dropdown-item" href="#">Serta Merta</a></li>
                             <li class="nav-item nav-link"><a class="dropdown-item" href="#">Setiap Saat</a></li>
                             <li class="nav-item nav-link"><a class="dropdown-item" href="#">DIP</a></li>
 
-
-
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#"></a></li>
+
                     <li class="nav-item"><a class="nav-link" href="#">Hubungi Kami</a></li>
                 </ul>
             </div>
@@ -136,7 +138,7 @@
     <!-- Carousels -->
 
     <div class="w3-content w3-section " style="max-width:70%; height: 400px;">
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -797,7 +799,7 @@
         </div>
     </div>
 
-    
+
     <div class="custom-footer w-100 p-5"
         style="background-blend-mode: lighten; background-size: 100%; background-repeat: no-repeat; background-position-y: center; background-image: url('../src/assets/bannertop.jpg');">
 
@@ -812,11 +814,11 @@
             <div class="col-lg-4 ">
                 <h3>Link Terkait</h3>
                 <ul>
-                    <li><a  href="#">BPK RI</a></li>
-                    <li><a  href="#">Kemenpan RB</a></li>
-                    <li><a  href="#">Kemenkeu RI</a></li>
-                    <li><a  href="#">Kemendagri</a></li>
-                    <li><a  href="#">Kemenkumham RI</a></li>
+                    <li><a href="#">BPK RI</a></li>
+                    <li><a href="#">Kemenpan RB</a></li>
+                    <li><a href="#">Kemenkeu RI</a></li>
+                    <li><a href="#">Kemendagri</a></li>
+                    <li><a href="#">Kemenkumham RI</a></li>
                 </ul>
             </div>
             <div class="col-lg-4">

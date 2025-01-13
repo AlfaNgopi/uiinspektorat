@@ -3680,9 +3680,12 @@ fieldset:disabled .btn {
   border-left: 0.3em solid transparent;
 }
 
-.dropdown-toggle:empty::after {
-  margin-left: 0;
+
+.dropdownhover:hover .dropdown-menu {
+  display: block;
 }
+
+
 
 .dropdown-menu {
   --bs-dropdown-zindex: 1000;
@@ -12785,7 +12788,7 @@ p {
 }
 
 .masthead-logo {
-  max-width: 50rem;
+  max-width: 50%;
   position: absolute; /* Allows flexibility for placement */
   top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */

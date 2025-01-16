@@ -510,16 +510,16 @@
                     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
                 );
             }
-
+    
             // Select all elements with the class "square"
-            const newscards = document.querySelectorAll('.news-card');
-
+            const custom_init_animations = document.querySelectorAll('.custom-init-animation');
+    
             // Add a scroll event listener
             window.addEventListener('scroll', () => {
-                newscards.forEach(newscard => {
-                    if (isInViewport(newscard) && !newscard.classList.contains('animated')) {
-                        newscard.classList.add('w3-animate-bottom', 'custom-animation', 'animated'); // Trigger animation
-                        newscard.style.opacity = 1; // Make it visible
+                custom_init_animations.forEach(custom_init_animation => {
+                    if (isInViewport(custom_init_animation) && !custom_init_animation.classList.contains('animated')) {
+                        custom_init_animation.classList.add('w3-animate-bottom', 'custom-animation', 'animated'); // Trigger animation
+                        custom_init_animation.style.opacity = 1; // Make it visible
                     }
                 });
             });

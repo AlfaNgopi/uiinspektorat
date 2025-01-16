@@ -12923,6 +12923,22 @@ p {
   color: #000;
 }
 
+
+.custom-gallery-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hover-primary{
+  color: black;
+}
+
+.custom-gallery-grid .gallery-item:hover .hover-primary{
+  color: rgba(var(--bs-primary-rgb));
+
+}
+
 .square {
   width: 100px;
   height: 100px;

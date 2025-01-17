@@ -23,16 +23,9 @@
 
     <style>
         /*MORPH*/
-        
 
-        a,
-        a:visited,
-        a:focus,
-        a:hover {
-            color: #000 !important;
-            cursor: pointer;
-            text-decoration: none
-        }
+
+
 
         html,
         body {
@@ -81,10 +74,26 @@
             width: 100px;
         }
 
+        @keyframes init-portal {
+            0% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        /* The element to apply the animation to */
+
+
         .item-portal {
             min-width: 20rem;
             padding-left: 1rem;
             padding-right: 1rem;
+            animation-name: init-portal;
+            animation-duration: 1s;
+
 
         }
 
@@ -102,9 +111,13 @@
 
 
         .custom-subtittle {
-
+            font-size: 1em;
             transition: all 1s ease;
+            position: absolute;
             opacity: 0;
+            top: 80%;
+            align-self: center;
+
         }
 
         .card {
@@ -124,6 +137,7 @@
         .card:hover .custom-subtittle {
             display: block;
             opacity: 1;
+
         }
 
         .card img {
@@ -133,6 +147,11 @@
 
         .card:hover img {
             width: 120px;
+        }
+
+        .custom-sizing {
+            height: 200px;
+            max-width: 270px;
         }
 
 
@@ -216,7 +235,7 @@
 
 <body>
 
-    <div style="height:100%;width:100%">
+    <div style="height:100%; width:100%">
 
 
 
@@ -238,119 +257,173 @@
 
 
                     <div class="item-portal">
-                        <div class="" style="height: 200px;">
+                        <a href="https://inspektorat.purworejokab.go.id/baru" style="text-decoration: none; color:black"
+                            target="_blank">
+                            <div class="custom-sizing">
 
-                            <div class="card shadow p-3 mb-5  bg-body-tertiary rounded">
+                                <div class="card shadow p-3 mb-5  bg-body-tertiary rounded ">
 
-                                <a href="https://inspektorat.purworejokab.go.id/baru" target="_blank">
-                                    <img src="../src/assets/home.png" class="morph">
-                                    <br>
+                                    <center>
+                                        <img src="../src/assets/home.png" class="morph">
+                                    </center>
+
                                     <h5 class="card-title">BERANDA</h5>
-                                    <p class="custom-subtittle">asdfsd</p>
+                                    <p class="custom-subtittle">Website Inspektorat</p>
 
-                                </a>
+
+
+                                </div>
 
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item-portal">
+                        <a href="https://inspektorat.purworejokab.go.id/baru" style="text-decoration: none; color:black"
+                            target="_blank">
+                            <div class="custom-sizing">
 
-                        <div class="" style="height: 200px;">
+                                <div class="card shadow p-3 mb-5  bg-body-tertiary rounded ">
+
+                                    <center>
+                                        <img src="../src/assets/icons-sapa.png" class="morph">
+                                    </center>
+
+                                    <h5 class="card-title">Pengaduan</h5>
+                                    <p class="custom-subtittle">Aduan Purworejo</p>
 
 
-                            <div class="card shadow p-3 mb-5  bg-body-tertiary rounded"
-                                style="background-color: rgba(245, 245, 245, 0.5);">
 
-                                <a href="https://aduanv2.purworejokab.go.id/pengaduan/" target="_blank">
-                                    <img src="../src/assets/icons-sapa.png"  class="morph">
-                                    <br><strong>BERANDA</strong>
-                                </a>
+                                </div>
 
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item-portal">
+                        <a href="https://inspektorat.purworejokab.go.id/baru" style="text-decoration: none; color:black"
+                            target="_blank">
+                            <div class="custom-sizing">
 
-                        <div class="" style="height: 200px;">
-                            <div class="card shadow p-3 mb-5  bg-body-tertiary rounded"
-                                style="background-color: rgba(245, 245, 245, 0.5);">
+                                <div class="card shadow p-3 mb-5  bg-body-tertiary rounded ">
 
-                                <a href="https://www.lapor.go.id/" target="_blank">
-                                    <img src="../src/assets/whistle.png"  class="morph">
-                                    <br><strong>BERANDA</strong>
-                                </a>
+                                    <center>
+                                        <img src="../src/assets/whistle.png" class="morph">
+                                    </center>
+
+                                    <h5 class="card-title">WBS</h5>
+                                    <p class="custom-subtittle">Whistle Blowing System</p>
+
+
+
+                                </div>
 
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item-portal">
-                        <div class="" style="height: 200px;">
+                        <a href="https://inspektorat.purworejokab.go.id/baru" style="text-decoration: none; color:black"
+                            target="_blank">
+                            <div class="custom-sizing">
 
-                            <div class="card shadow p-3 mb-5  bg-body-tertiary rounded"
-                                style="background-color: rgba(245, 245, 245, 0.5);">
+                                <div class="card shadow p-3 mb-5  bg-body-tertiary rounded ">
 
-                                <a href="https://gol.kpk.go.id/login" target="_blank">
-                                    <img src="../src/assets/gol-logo2.png"  class="morph">
-                                    <br><strong>BERANDA</strong>
-                                </a>
+                                    <center>
+                                        <img src="../src/assets/gol-logo2.png" class="morph">
+                                    </center>
+
+                                    <h5 class="card-title">GOL</h5>
+                                    <p class="custom-subtittle">Gratifikasi Online</p>
+
+
+
+                                </div>
 
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item-portal">
-                        <div class="" style="height: 200px;">
-                            <div class="card shadow p-3 mb-5  bg-body-tertiary rounded"
-                                style="background-color: rgba(245, 245, 245, 0.5);">
+                        <a href="https://inspektorat.purworejokab.go.id/baru" style="text-decoration: none; color:black"
+                            target="_blank">
+                            <div class="custom-sizing">
 
-                                <a href="https://elhkpn.kpk.go.id/" target="_blank">
-                                    <img src="../src/assets/lhkpn.png"  class="morph">
-                                    <br><strong>BERANDA</strong>
-                                </a>
+                                <div class="card shadow p-3 mb-5  bg-body-tertiary rounded ">
+
+                                    <center>
+                                        <img src="../src/assets/lhkpn.png" class="morph">
+                                    </center>
+
+                                    <h5 class="card-title">LHKPN</h5>
+                                    <!-- <p class="text-truncate-1 custom-subtittle " style="overflow: visible;">e-Announcement LHKPN PEMERINTAH KABUPATEN PURWOREJO</p> -->
+
+
+
+                                </div>
 
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item-portal">
-                        <div class="" style="height: 200px;">
-                            <div class="card shadow p-3 mb-5  bg-body-tertiary rounded"
-                                style="background-color: rgba(245, 245, 245, 0.5);">
+                        <a href="https://inspektorat.purworejokab.go.id/baru" style="text-decoration: none; color:black"
+                            target="_blank">
+                            <div class="" style="height: 200px; max-width: 270px;">
 
-                                <a href="https://siharka.menpan.go.id/index.php/login" target="_blank">
-                                    <img src="../src/assets/harka.png"  class="morph">
-                                    <br><strong>BERANDA</strong>
-                                </a>
+                                <div class="card shadow p-3 mb-5  bg-body-tertiary rounded ">
+
+                                    <center>
+                                        <img src="../src/assets/harka.png" class="morph">
+                                    </center>
+
+                                    <h5 class="card-title">SIHARKA</h5>
+                                    <p class="custom-subtittle">SIHARKA MENPAN</p>
+
+
+
+                                </div>
 
                             </div>
-                        </div>
-
+                        </a>
                     </div>
                     <div class="item-portal">
-                        <div class="" style="height: 200px;">
+                        <a href="https://inspektorat.purworejokab.go.id/baru" style="text-decoration: none; color:black"
+                            target="_blank">
+                            <div class="custom-sizing">
 
-                            <div class="card shadow p-3 mb-5  bg-body-tertiary rounded"
-                                style="background-color: rgba(245, 245, 245, 0.5);">
+                                <div class="card shadow p-3 mb-5  bg-body-tertiary rounded ">
 
-                                <a href="https://inspektorat.purworejokab.go.id/baru/survey" target="_blank">
-                                    <img src="../src/assets/icons-doc11.png" class="morph">
-                                    <br><strong>BERANDA</strong>
-                                </a>
+                                    <center>
+                                        <img src="../src/assets/icons-doc11.png" class="morph">
+                                    </center>
+
+                                    <h5 class="card-title">SKM</h5>
+                                    <p class="custom-subtittle">Survey Kepuasan Mitra</p>
+
+
+
+                                </div>
 
                             </div>
-                        </div>
-
+                        </a>
                     </div>
                     <div class="item-portal">
-                        <div class="" style="height: 200px;">
-                            <div class="card shadow p-3 mb-5  bg-body-tertiary rounded"
-                                style="background-color: rgba(245, 245, 245, 0.5);">
+                        <a href="https://inspektorat.purworejokab.go.id/baru" style="text-decoration: none; color:black"
+                            target="_blank">
+                            <div class="custom-sizing">
 
-                                <a href="https://eppid.purworejokab.go.id/opd/inspektorat/" target="_blank">
-                                    <img src="../src/assets/icons-gedung2.png"  class="morph">
-                                    <br><strong>BERANDA</strong>
-                                </a>
+                                <div class="card shadow p-3 mb-5  bg-body-tertiary rounded ">
+
+                                    <center>
+                                        <img src="../src/assets/icons-gedung2.png" class="morph">
+                                    </center>
+
+                                    <h5 class="card-title">PPID</h5>
+                                    <p class="custom-subtittle" style="font-size: 0.7em;">Pejabat Pengelola Informasi
+                                        dan Dokumentasi</p>
+
+
+
+                                </div>
 
                             </div>
-                        </div>
+                        </a>
                     </div>
 
 

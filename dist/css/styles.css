@@ -49,7 +49,7 @@
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 200, 0;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
+  --bs-light-rgb: 243, 243, 243;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -3680,9 +3680,16 @@ fieldset:disabled .btn {
   border-left: 0.3em solid transparent;
 }
 
+.dropdown-menu{
+  
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
 
 .dropdownhover:hover>.dropdown-menu {
   display: block;
+  opacity: 1;
 }
 
 .dropdownhover .dropdown-menu .dropdownhover:hover>.dropdown-menu {
@@ -12858,6 +12865,27 @@ p {
   color: #ffffff;
   padding: 2px 10px;
   text-decoration: none;
+}
+
+.custom-widget{
+  
+  
+  
+}
+
+.custom-widget .widget-header{
+  background-color: #282474;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.custom-widget .widget-body{
+  background-color: white;
+  padding: 10px;
 }
 
 

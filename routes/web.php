@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('beranda');
-});
+use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\PageController;
+
+Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+Route::get('/berita/{title}', [PageController::class, 'berita'])->name('berita');
+
+
+

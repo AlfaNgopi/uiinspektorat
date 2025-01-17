@@ -385,14 +385,14 @@
                 <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
                     <div class="card-body">
                         <h5 class="card-title">Berita Terbaru</h5>
+                        @forEach($beritas as $berita)
                         <a href="pages.html" style="text-decoration: none;">
                             <div class="row news-card mt-3">
                                 <div class="col-lg-4 news-card-img">
                                     <img src="../src/assets/news1.jpg" class="img-fluid rounded-start" alt="...">
                                 </div>
                                 <div class="col-lg-8">
-                                    <p class="card-title text-truncate-2 m-0 ">Rapat Koordinasi Laporan Hasil
-                                        Pemeriksaan
+                                    <p class="card-title text-truncate-2 m-0 ">
                                         terkait Tata Kelola BLUD Tahun 2024</p>
 
                                     <div class="news-tags ">Sekretariat</div>
@@ -401,6 +401,7 @@
                             </div>
                             <hr class="solid">
                         </a>
+                        @endForEach
                         <a href="pages.html" style="text-decoration: none;">
                             <div class="row news-card mt-3">
                                 <div class="col-lg-4 news-card-img">

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class BeritasController extends Controller
 {
-    public function Beritas()
+    public function beritas()
     {
 
         $path = storage_path('app/beritas.json');
@@ -24,11 +24,16 @@ class BeritasController extends Controller
 
         $mainberitas = array_slice($beritas, -10);
 
+
+        $beritasidebar = CommonFunction::beritasSidebar();
+
         return view(
             'pages/beritas',
 
             [
-                'mainberitas' => $mainberitas,
+                'page' => 'Berita',
+                'beritas' => $mainberitas,
+                'beritasidebar' => $beritasidebar,
             ]
         );
     }
@@ -86,11 +91,16 @@ class BeritasController extends Controller
 
         $beritas = array_slice($beritas, -10);
 
+        $beritasidebar = CommonFunction::beritasSidebar();
+
         return view(
             'pages/beritas',
 
+
             [
-                'mainberitas' => $beritas
+                'page' => 'Berita',
+                'mainberitas' => $beritas,
+                'beritasidebar' => $beritasidebar,
             ]
         );
     }

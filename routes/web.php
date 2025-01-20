@@ -3,10 +3,29 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\BeritasController;
+use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\GambarController;
+use App\Http\Controllers\HubungiController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\SurveyController;
+use App\Http\Controllers\VideoController;
 
 Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+Route::get('/berita', [BeritasController::class, 'beritas'])->name('berita');
 Route::get('/berita/{title}', [PageController::class, 'berita'])->name('berita');
 
+Route::get('/document/{title}', [DocumentController::class, 'document'])->name('document');
 
+Route::get('/download', [DownloadController::class, 'index'])->name('download');
 
+Route::get('/hubungi', [HubungiController::class, 'hubungi'])->name('hubungi');
+
+Route::get('/videos', [VideoController::class, 'videos'])->name('videos');
+Route::get('/videos/{title}', [VideoController::class, 'video'])->name('video');
+
+Route::get('/gallerys/', [GambarController::class, 'gallerys'])->name('gallerys');
+Route::get('/gallerys/{title}', [GambarController::class, 'gambar'])->name('gallery');
+
+Route::get('/survey', [SurveyController::class, 'index'])->name('survey');

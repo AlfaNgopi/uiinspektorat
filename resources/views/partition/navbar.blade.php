@@ -9,14 +9,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link" href="pages.html">Survey</a></li>
+                <li class="nav-item"><a class="nav-link" href="/survey">Survey</a></li>
 
                 <li class="nav-item dropdownhover">
                     <a class="nav-link " aria-expanded="false" href=""> Profile </a>
 
 
                     <ul class="dropdown-menu dropdown-menu-dark">
-                        <li class="nav-item nav-link"><a class="dropdown-item" href="pages_nocomment.html">Tata
+                        <li class="nav-item nav-link"><a class="dropdown-item" href="/document/tata-kerja">Tata
                                 Kerja</a></li>
                         <li class="nav-item nav-link"><a class="dropdown-item" href="pages.html">Kedudukan Tugas dan
                                 Fungsi</a></li>
@@ -90,9 +90,9 @@
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="#">Galeri</a></li>
+                <li class="nav-item"><a class="nav-link" href="/gallerys">Galeri</a></li>
                 <li class="nav-item dropdownhover ">
-                    <a class="nav-link " aria-expanded="false" href="pages_videos.html">
+                    <a class="nav-link " aria-expanded="false" href="/videos">
                         Video
                     </a>
 
@@ -104,9 +104,9 @@
 
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="pages_download.html">Download</a></li>
+                <li class="nav-item"><a class="nav-link" href="/download">Download</a></li>
                 <li class="nav-item dropdownhover ">
-                    <a class="nav-link " aria-expanded="false" href="pages_beritas.html">
+                    <a class="nav-link " aria-expanded="false" href="/berita">
                         Berita
                     </a>
 
@@ -150,7 +150,7 @@
                 </li>
 
                 <li class="nav-item dropdownhover">
-                    <a class="nav-link" aria-expanded="false" href="pages_hubungi.html">
+                    <a class="nav-link" aria-expanded="false" href="/hubungi">
                         Hubungi Kami
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">

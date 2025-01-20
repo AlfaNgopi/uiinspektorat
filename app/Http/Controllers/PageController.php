@@ -41,18 +41,17 @@ class PageController extends Controller
             return view('pages/404', ["title" => "404 Not Found"]);
         }
 
-        $beritas = array_slice($beritas, -6);
-
-
+        $beritasidebar = CommonFunction::beritasSidebar();
 
 
 
         return view(
             'pages/page',
             [
-                "title" => "Berita",
+                "page" => "Berita",
                 "berita" => $berita,
-                "beritas" => $beritas
+                "beritasidebar" => $beritasidebar
+                
             ]
         );
     }

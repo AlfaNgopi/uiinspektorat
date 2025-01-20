@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-        <a class="" style="height: 50px;" href="#page-top"><img class="h-100 img-fluid"
+        <a class="" style="height: 50px;" href="/"><img class="h-100 img-fluid"
                 src="{{asset('assets/inspektorat-logo.png') }}" alt="..." /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
                                 Kerja</a></li>
                         <li class="nav-item nav-link"><a class="dropdown-item" href="pages.html">Kedudukan Tugas dan
                                 Fungsi</a></li>
-                        <li class="nav-item nav-link"><a class="dropdown-item" href="pages.html">Struktur
+                        <li class="nav-item nav-link"><a class="dropdown-item" href="/document/sotk">Struktur
                                 Organisasi</a></li>
                         <li class="nav-item nav-link"><a class="dropdown-item" href="pages.html">Bagan
                                 Organisasi</a></li>

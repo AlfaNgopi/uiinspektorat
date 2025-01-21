@@ -13,8 +13,13 @@ use App\Http\Controllers\SurveyController;
 use App\Http\Controllers\VideoController;
 
 Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+
+
 Route::get('/berita', [BeritasController::class, 'beritas'])->name('berita');
 Route::get('/berita/{title}', [PageController::class, 'berita'])->name('berita');
+Route::get('/berita/kategori/{kategori}', [BeritasController::class, 'beritabykategori'])->name('berita.kategori');
+Route::get('/berita/cari/cari', [BeritasController::class, 'beritabycari'])->name('berita.cari');
+
 
 Route::get('/document/{title}', [DocumentController::class, 'document'])->name('document');
 

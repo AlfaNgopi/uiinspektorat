@@ -25,12 +25,14 @@ class VideoController extends Controller
         // $mainvideos = array_slice($videos, -10);
 
         $beritasidebar = CommonFunction::beritasSidebar();
+        $menus = CommonFunction::getMenu();
 
         return view(
             'pages/videos',
 
             [
                 'page' => 'Videos',
+                'menus' => $menus,
                 // 'videos' => $mainvideos,
                 'beritasidebar' => $beritasidebar,
             ]
@@ -66,11 +68,13 @@ class VideoController extends Controller
         }
 
         $beritasidebar = CommonFunction::beritasSidebar();
+        $menus = CommonFunction::getMenu();
 
         return view(
             'pages/video',
             [
                 "page" => "Video",
+                "menus" => $menus,
                 "video" => $video,
                 "beritasidebar" => $beritasidebar
             ]

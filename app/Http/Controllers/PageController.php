@@ -38,10 +38,11 @@ class PageController extends Controller
        
 
         if ($berita == null) {
-            return view('pages/404', ["title" => "404 Not Found"]);
+            return view('/',);
         }
 
         $beritasidebar = CommonFunction::beritasSidebar();
+        $menus = CommonFunction::getMenu();
 
 
 
@@ -49,6 +50,7 @@ class PageController extends Controller
             'pages/page',
             [
                 "page" => "Berita",
+                "menus" => $menus,
                 "berita" => $berita,
                 "beritasidebar" => $beritasidebar
                 

@@ -11,10 +11,12 @@ class HubungiController extends Controller
     {
 
         $beritasidebar = CommonFunction::beritasSidebar();
+        $menus = CommonFunction::getMenu();
 
         return view('pages/hubungi', 
         [
             "page" => "Hubungi",
+            "menus" => $menus,
             "beritasidebar" => $beritasidebar
         ]);
     }

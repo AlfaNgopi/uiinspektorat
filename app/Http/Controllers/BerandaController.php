@@ -25,10 +25,7 @@ class BerandaController extends Controller
         }
 
 
-        foreach ($beritas as &$berita) {
-            $berita['link'] = strtolower(str_replace(' ', '-', $berita['title']));
-        }
-        unset($berita);
+        $beritas = CommonFunction::addLinks($beritas);
 
 
         $beritas = array_slice($beritas, -8);
@@ -45,7 +42,7 @@ class BerandaController extends Controller
         $beritaredaksis2 = array_slice($beritaredaksis, 3, 3);
 
 
-
+        $menus = CommonFunction::getMenu();
 
 
 
@@ -53,6 +50,7 @@ class BerandaController extends Controller
             'pages/beranda',
             [
                 'beritas' => $beritas,
+                'menus' => $menus,
                 'beritaredaksis1' => $beritaredaksis1,
                 'beritaredaksis2' => $beritaredaksis2
             ]

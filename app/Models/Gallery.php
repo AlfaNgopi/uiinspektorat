@@ -4,22 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Berita extends Model
+class Gallery extends Model
 {
-
-    protected $table = "beritas";
+    protected $table = "galleries";
     protected $primaryKey = "id";
 
     protected $fillable = [
-        'img',
         'title',
-        'subtitle',
         'context',
-        'img_caption',
+        'is_active',
         'author',
         'date',
-        'category',
-        'is_redaksi',
+        
     ];
 
     
@@ -28,4 +24,3 @@ class Berita extends Model
         return $this->belongsTo(User::class, 'author');
     }
 }
-    

@@ -11,12 +11,14 @@ class GambarController extends Controller
     {
 
         $beritasidebar = CommonFunction::beritasSidebar();
+        $menus = CommonFunction::getMenu();
 
         return view(
             'pages/gallerys',
 
             [
                 'page' => 'Gallerys',
+                'menus' => $menus,
                 'beritasidebar' => $beritasidebar,
             ]
         );
@@ -26,12 +28,14 @@ class GambarController extends Controller
     {
 
         $beritasidebar = CommonFunction::beritasSidebar();
+        $menus = CommonFunction::getMenu();
 
         return view(
             'pages/gambar',
 
             [
                 'page' => 'Gallery',
+                'menus' => $menus,
                 'beritasidebar' => $beritasidebar,
             ]
         );

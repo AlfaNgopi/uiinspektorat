@@ -138,7 +138,7 @@
                     <form action="">
 
                         <h4>Post Comment</h4>
-                        <p>Your email address will not be published. Required fields are marked * </p>
+                        <p></p>
                         <div class="row mb-4">
                             <div class="col-sm-6  form-group">
                                 <input name="name" type="text" class="form-control" placeholder="Your Name*">

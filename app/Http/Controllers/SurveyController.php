@@ -11,12 +11,14 @@ class SurveyController extends Controller
     {
 
         $beritasidebar = CommonFunction::beritasSidebar();
+        $menus = CommonFunction::getMenu();
 
         return view(
             'pages/survey',
 
             [
                 'page' => 'Survey',
+                'menus' => $menus,
                 'beritasidebar' => $beritasidebar,
             ]
         );

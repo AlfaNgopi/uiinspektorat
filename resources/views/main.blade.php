@@ -8,7 +8,7 @@
     <meta name="author" content="" />
     <title>Inspektorat Kabupaten Purworejo</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="../src/assets/logo.png" />
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/logo.png')}}" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -26,12 +26,12 @@
 
 </head>
 
-<body>
+<body bg-light>
     @include('partition.navbar')
 
-
-    @yield('content')
-
+    <div class="bg-light">
+        @yield('content')
+    </div>
     @include('partition.footer')
 
 

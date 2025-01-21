@@ -31,7 +31,7 @@ class DocumentController extends Controller
 
 
         if ($document == null) {
-            return view('document/404', ["title" => "404 Not Found"]);
+            return view('/',);
         }
 
         $context = $document['text'];
@@ -43,13 +43,14 @@ class DocumentController extends Controller
         $formatted = preg_replace('/\*(.*?)\*/', '<i>$1</i>', $formatted);
 
         // Convert multiple empty lines (\n\n) to <br>
-        $formatted = preg_replace('/(\r?\n){2,}/', '<br>', $formatted);
+        $formatted = preg_replace('/(\r?\n){2,}/', '<br><br>', $formatted);
 
         // Convert single newlines (\n) to <br>
         $formatted = nl2br($formatted);
 
 
         $beritasidebar = CommonFunction::beritasSidebar();
+        $menus = CommonFunction::getMenu();
 
 
 
@@ -58,6 +59,7 @@ class DocumentController extends Controller
             [
 
                 'page' => 'Document',
+                'menus' => $menus,
                 'document' => $document,
                 'formatted' => $formatted,
                 'beritasidebar' => $beritasidebar

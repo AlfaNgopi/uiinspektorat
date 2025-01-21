@@ -30,7 +30,7 @@
             <div class="widget-body">
                 <div class="row">
                     <div class="col-6">
-                        <a href="#" target="_blank">
+                        <a href="/document/sotk">
                             <div class="btn widget-btn w-100 m-1"
                                 style="background-color: #282474; color: #fff;">
                                 <i class="fa-solid fa-file-lines"></i> SOTK
@@ -38,7 +38,7 @@
                         </a>
                     </div>
                     <div class="col-6">
-                        <a href="#" target="_blank">
+                        <a href="#" >
                             <div class="btn widget-btn w-100 m-1"
                                 style="background-color: #282474; color: #fff;">
                                 <i class="fa-solid fa-file-lines"></i> LHKAN
@@ -46,7 +46,7 @@
                         </a>
                     </div>
                     <div class="col-6">
-                        <a href="#" target="_blank">
+                        <a href="#" >
                             <div class="btn widget-btn w-100 m-1"
                                 style="background-color: #282474; color: #fff;">
                                 <i class="fa-solid fa-file-lines"></i> DPA

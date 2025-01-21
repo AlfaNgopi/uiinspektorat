@@ -20,6 +20,7 @@ class DownloadController extends Controller
 
 
         $beritasidebar = CommonFunction::beritasSidebar();
+        $menus = CommonFunction::getMenu();
 
 
 
@@ -30,6 +31,7 @@ class DownloadController extends Controller
     
             [
                 'page' => 'Download',
+                'menus' => $menus,
                 'downloads' => $downloads,
                 'beritasidebar' => $beritasidebar,
                 

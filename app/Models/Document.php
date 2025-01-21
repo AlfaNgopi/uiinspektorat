@@ -4,10 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Berita extends Model
+class Document extends Model
 {
-
-    protected $table = "beritas";
+    
+    protected $table = "documents";
     protected $primaryKey = "id";
 
     protected $fillable = [
@@ -18,8 +18,7 @@ class Berita extends Model
         'img_caption',
         'author',
         'date',
-        'category',
-        'is_redaksi',
+        
     ];
 
     
@@ -28,4 +27,3 @@ class Berita extends Model
         return $this->belongsTo(User::class, 'author');
     }
 }
-    

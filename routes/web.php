@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\BerandaController;
@@ -34,3 +35,8 @@ Route::get('/gallerys/', [GambarController::class, 'gallerys'])->name('gallerys'
 Route::get('/gallerys/{title}', [GambarController::class, 'gambar'])->name('gallery');
 
 Route::get('/survey', [SurveyController::class, 'index'])->name('survey');
+
+
+Route::get('/admin/Dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+Route::get('/admin/Berita', [AdminController::class, 'berita'])->name('admin.berita');
+

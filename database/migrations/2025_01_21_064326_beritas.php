@@ -21,6 +21,7 @@ return new class extends Migration
             $table->foreignId('author_id')->constrained('users')->onDelete('cascade');
             $table->date('date');
             $table->string('category');
+            $table->string('status')->default('draft');
             $table->boolean('is_redaksi');
             $table->timestamps();
         });

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Menu;
+use App\Models\MenuItem;
 use Illuminate\Http\Request;
 
 class CommonFunction extends Controller
@@ -22,15 +23,12 @@ class CommonFunction extends Controller
         //     abort(500, 'Error decoding JSON');
         // }
 
-        $menus1 = Menu::all();
+        $menu = MenuItem::with('children')->whereNull('parent_id')->get();
 
-        $menus = $menus1->toArray()[0]['menus'];
-
+        // dd($menu);
         
 
-
-
-        return $menus;
+        return $menu;
     }
 
 
@@ -49,6 +47,20 @@ class CommonFunction extends Controller
         }
 
         return $beritas;
+    }
+
+    public static function getAdminSidebar(){
+        $path = storage_path('app/adminsidebar.json');
+        if (!file_exists($path)) {
+            abort(404, 'File not found');
+        }
+
+        $json = file_get_contents($path);
+        $sidebars = json_decode($json, true);
+
+        
+
+        return $sidebars;
     }
 
     public static function getKategori()

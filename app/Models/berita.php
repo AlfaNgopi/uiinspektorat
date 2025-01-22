@@ -19,6 +19,7 @@ class Berita extends Model
         'author',
         'date',
         'category',
+        'status',
         'is_redaksi',
     ];
 

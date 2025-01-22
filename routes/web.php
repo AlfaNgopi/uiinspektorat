@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\BerandaController;
@@ -36,7 +37,14 @@ Route::get('/gallerys/{title}', [GambarController::class, 'gambar'])->name('gall
 
 Route::get('/survey', [SurveyController::class, 'index'])->name('survey');
 
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/login/actionlogin', [AuthController::class, 'actionLogin'])->name('actionLogin');
+
 
 Route::get('/admin/Dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+
 Route::get('/admin/Berita', [AdminController::class, 'berita'])->name('admin.berita');
+Route::get('/admin/Berita/Tambah', [AdminController::class, 'tambahberita'])->name('admin.berita.tambah');
+Route::post('/admin/Berita/Tambah2', [AdminController::class, 'actionTambahBerita'])->name('actionTambahBerita');
+
 

@@ -16,7 +16,7 @@ class Berita extends Model
         'subtitle',
         'context',
         'img_caption',
-        'author',
+        'author_id',
         'date',
         'category',
         'status',
@@ -26,7 +26,11 @@ class Berita extends Model
     
     public function author()
     {
-        return $this->belongsTo(User::class, 'author');
+        return $this->belongsTo(User::class, 'author_id');
+    }
+    public function category()
+    {
+        return $this->belongsTo(Berita_kategori::class, 'category');
     }
 }
     

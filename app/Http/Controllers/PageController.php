@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Berita;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -10,17 +11,19 @@ class PageController extends Controller
     public function berita($title)
     {
 
-        $path = storage_path('app/beritas.json');
-        if (!file_exists($path)) {
-            abort(404, 'File not found');
-        }
+        // $path = storage_path('app/beritas.json');
+        // if (!file_exists($path)) {
+        //     abort(404, 'File not found');
+        // }
 
-        $json = file_get_contents($path);
-        $beritas = json_decode($json, true);
+        // $json = file_get_contents($path);
+        // $beritas = json_decode($json, true);
 
-        if (json_last_error() !== JSON_ERROR_NONE) {
-            abort(500, 'Error decoding JSON');
-        }
+        // if (json_last_error() !== JSON_ERROR_NONE) {
+        //     abort(500, 'Error decoding JSON');
+        // }
+
+        $beritas = Berita::all();
 
         
 
@@ -38,6 +41,7 @@ class PageController extends Controller
        
 
         if ($berita == null) {
+            dd($berita);
             return view('/',);
         }
 

@@ -18,7 +18,7 @@
                 <div class="col-6">
                     <div class="custom-horizontal-list">
                         <li>
-                            <p class="d-flex align-items-center"><i class="bi bi-person mx-2"></i> {{$berita['author']}}</p>
+                            <p class="d-flex align-items-center"><i class="bi bi-person mx-2"></i> {{$berita['author']->name}}</p>
                         </li>
 
                         <li>
@@ -74,13 +74,14 @@
             <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
 
 
-                <img src="{{ asset($berita['img'])}}" class="card-img-top" alt="...">
+                <img src="{{ asset($berita['img']) }}" class="card-img-top" alt="Image">
+
                 <div class="ket-gambar text-center">
                     <b>Keterangan Gambar :</b> {{$berita['img_caption']}}
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        {{ $berita['text'] }}
+                    <div>{!! $berita['context'] !!}</div>
                     </p>
                 </div>
             </div>
@@ -175,6 +176,9 @@
 
         @include('partition.sidebar_beritaterbaru')
 
+
         
+
+
     </div>
 </div>

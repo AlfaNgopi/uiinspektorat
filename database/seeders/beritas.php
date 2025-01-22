@@ -18,7 +18,7 @@ class beritas extends Seeder
             'title' => 'Berita 1',
             'context' => 'Ini adalah berita 1',
             'author_id' => 1,
-            'category' => "Sekretariat",
+            'category' => 1,
             'is_redaksi' => true,
             'date' => '2025-01-21',
         ]);

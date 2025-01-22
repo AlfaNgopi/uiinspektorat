@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use Database\Seeders\user as SeedersUser;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -32,6 +33,7 @@ class DatabaseSeeder extends Seeder
             komentars::class,
             playlists::class,
             videos::class,
+            SeedersUser::class,
         ]);
     }
 }

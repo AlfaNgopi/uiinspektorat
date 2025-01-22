@@ -7,7 +7,7 @@
             <div class="card-header">
                 <h3 class="card-title">Semua Berita</h3>
                 <div class="card-tools">
-                    <a class="btn btn-primary btn-sm" href="https://inspektorat.purworejokab.go.id/baru/administrator/tambah_listberita">Tambahkan Data</a>
+                    <a class="btn btn-primary btn-sm" href="{{route('admin.berita.tambah')}}">Tambahkan Data</a>
                 </div>
             </div><!-- /.card-header -->
             <div class="card-body ">

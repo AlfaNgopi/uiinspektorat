@@ -23,12 +23,12 @@
 
                 @if($pagename == $m['name'])
                 <a href="{{$m['name']}}" class="nav-link active">
-                @else
-                <a href="{{$m['name']}}" class="nav-link active">
-                @endif
-                    <i class="nav-icon {{$m['icon']}}"></i>
+                    @else
+                    <a href="{{$m['name']}}" class="nav-link active">
+                        @endif
+                        <i class="nav-icon {{$m['icon']}}"></i>
                         <p>
-                        {{$m['name']}}
+                            {{$m['name']}}
                         </p>
                     </a>
 
@@ -37,34 +37,42 @@
             <li class="nav-item menu">
                 @if($pagename == $m['name'])
                 <a href="#" class="nav-link active">
-                @else
-                <a href="#}" class="nav-link">
-                @endif
-                    <i class="nav-icon {{$m['icon']}}"></i>
-                    <p>
-                        {{$m['name']}}
-                        <i class="right fas fa-angle-left"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    @foreach($m['sub_menu'] as $sm)
-                    <li class="nav-item">
-                        @if($subpagename == $sm['name'])
-                        <a href="{{$sm['link']}}" class="nav-link active">
-                        @else
-                        <a href="{{$sm['link']}}" class="nav-link">
+                    @else
+                    <a href="#" class="nav-link">
                         @endif
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>{{$sm['name']}}</p>
-                        </a>
+                        <i class="nav-icon {{$m['icon']}}"></i>
+                        <p>
+                            {{$m['name']}}
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        @foreach($m['sub_menu'] as $sm)
+                        <li class="nav-item">
+                            @if($subpagename == $sm['name'])
+                            @if($sm['link'] == '#')
+                            <a href="#" class="nav-link active">
+                                @else
+                                <a href="{{$sm['link']}}" class="nav-link active">
+                                    @endif
+                            @else
+                                    @if($sm['link'] == '#')
+                                    <a href="#" class="nav-link">
+                                        @else
+                                        <a href="{{route($sm['link'])}}" class="nav-link">
+                                            @endif
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>{{$sm['name']}}</p>
+                                        </a>
+                                        @endif
 
-                    </li>
-                    @endforeach
-                </ul>
+                        </li>
+                        @endforeach
+                    </ul>
             </li>
             @endif
             @endforeach
-            
+
 
 
         </ul>

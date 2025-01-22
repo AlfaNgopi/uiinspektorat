@@ -14,6 +14,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('css/adminlte.min.css')}}">
 </head>
@@ -170,63 +173,70 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Sidebar -->
             @include('partition.admin.sidebar')
 
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0">Starter Page</h1>
-                        </div><!-- /.col -->
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Starter Page</li>
-                            </ol>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0">Starter Page</h1>
+                            </div><!-- /.col -->
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active">Starter Page</li>
+                                </ol>
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container-fluid -->
+                </div>
+                <!-- /.content-header -->
+
+                <!-- Main content -->
+                @yield('content')
+
+
+
+                <!-- Control Sidebar -->
+                <aside class="control-sidebar control-sidebar-dark">
+                    <!-- Control sidebar content goes here -->
+                    <div class="p-3">
+                        <h5>Title</h5>
+                        <p>Sidebar content</p>
+                    </div>
+                </aside>
+                <!-- /.control-sidebar -->
+
+                <!-- Main Footer -->
+                <footer class="main-footer w-100 m-0" style="margin: 0;">
+                    <!-- To the right -->
+                    <div class="float-right d-none d-sm-inline">
+                        LTE 3.2
+                    </div>
+                    <!-- Default to the left -->
+                    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+                </footer>
             </div>
-            <!-- /.content-header -->
-
-            <!-- Main content -->
-            @yield('content')
 
 
+            <!-- ./wrapper -->
 
-            <!-- Control Sidebar -->
-            <aside class="control-sidebar control-sidebar-dark">
-                <!-- Control sidebar content goes here -->
-                <div class="p-3">
-                    <h5>Title</h5>
-                    <p>Sidebar content</p>
-                </div>
-            </aside>
-            <!-- /.control-sidebar -->
+            <!-- REQUIRED SCRIPTS -->
+            <script>
+                ClassicEditor
+                    .create(document.querySelector('#content1'))
+                    .catch(error => {
+                        console.error(error);
+                    });
+            </script>
 
-            <!-- Main Footer -->
-            <footer class="main-footer w-100 m-0" style="margin: 0;">
-                <!-- To the right -->
-                <div class="float-right d-none d-sm-inline">
-                    LTE 3.2
-                </div>
-                <!-- Default to the left -->
-                <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-            </footer>
-        </div>
-
-
-        <!-- ./wrapper -->
-
-        <!-- REQUIRED SCRIPTS -->
-
-        <!-- jQuery -->
-        <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
-        <!-- Bootstrap 4 -->
-        <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-        <!-- AdminLTE App -->
-        <script src="{{asset('js/adminlte.min.js')}}"></script>
+            <!-- jQuery -->
+            <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
+            <!-- Bootstrap 4 -->
+            <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+            <!-- AdminLTE App -->
+            <script src="{{asset('js/adminlte.min.js')}}"></script>
 </body>
 
 </html>

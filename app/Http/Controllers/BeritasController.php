@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Berita;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
@@ -12,17 +13,7 @@ class BeritasController extends Controller
 {
     public function beritas()
     {
-        $path = storage_path('app/beritas.json');
-        if (!file_exists($path)) {
-            abort(404, 'File not found');
-        }
-
-        $json = file_get_contents($path);
-        $beritas = json_decode($json, true);
-
-        if (json_last_error() !== JSON_ERROR_NONE) {
-            abort(500, 'Error decoding JSON');
-        }
+        $beritas = Berita::all()->toArray();
 
 
         // Paginate the beritas array
@@ -35,6 +26,8 @@ class BeritasController extends Controller
         $currentItems = array_slice($beritas, ($currentPage - 1) * $perPage, $perPage);
 
         $currentItems = CommonFunction::addLinks($currentItems);
+        $currentItems = CommonFunction::addKategoriName($currentItems);
+        $currentItems = CommonFunction::addAuthorName($currentItems);
 
         // Create pagination data
         $pagination = [
@@ -65,22 +58,12 @@ class BeritasController extends Controller
     public function beritabykategori($kategori)
     {
 
-        $path = storage_path('app/beritas.json');
-        if (!file_exists($path)) {
-            abort(404, 'File not found');
-        }
-
-        $json = file_get_contents($path);
-        $beritas = json_decode($json, true);
-
-        if (json_last_error() !== JSON_ERROR_NONE) {
-            abort(500, 'Error decoding JSON');
-        }
+        $beritas = Berita::all()->toArray();
 
         // dd($beritas);
 
         $beritas = array_filter($beritas, function ($berita) use ($kategori) {
-            return $berita['kategori'] == $kategori;
+            return $berita['category'] == $kategori;
         });
 
         $perPage = 10;
@@ -89,6 +72,8 @@ class BeritasController extends Controller
         $currentItems = array_slice($beritas, ($currentPage - 1) * $perPage, $perPage);
 
         $currentItems = CommonFunction::addLinks($currentItems);
+        $currentItems = CommonFunction::addKategoriName($currentItems);
+        $currentItems = CommonFunction::addAuthorName($currentItems);
 
         // Create pagination data
         $pagination = [
@@ -118,17 +103,7 @@ class BeritasController extends Controller
     public function beritabycari(Request $request)
     {
 
-        $path = storage_path('app/beritas.json');
-        if (!file_exists($path)) {
-            abort(404, 'File not found');
-        }
-
-        $json = file_get_contents($path);
-        $beritas = json_decode($json, true);
-
-        if (json_last_error() !== JSON_ERROR_NONE) {
-            abort(500, 'Error decoding JSON');
-        }
+        $beritas = Berita::all()->toArray();
 
         $keyword = $request->input('keyword');
 
@@ -142,6 +117,8 @@ class BeritasController extends Controller
         $currentItems = array_slice($beritas, ($currentPage - 1) * $perPage, $perPage);
 
         $currentItems = CommonFunction::addLinks($currentItems);
+        $currentItems = CommonFunction::addKategoriName($currentItems);
+        $currentItems = CommonFunction::addAuthorName($currentItems);
 
         // Create pagination data
         $pagination = [

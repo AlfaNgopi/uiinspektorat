@@ -2,6 +2,8 @@
 
 @include('partition.header')
 
+
+
 <!-- Main Content-->
 <div class="container mt-5">
 
@@ -68,6 +70,7 @@
     </div>
 
 
+
     <div class="row">
 
         <div class="col-lg-8">
@@ -81,6 +84,7 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
+                        
                     <div>{!! $berita['context'] !!}</div>
                     </p>
                 </div>
@@ -177,7 +181,7 @@
         @include('partition.sidebar_beritaterbaru')
 
 
-        
+
 
 
     </div>

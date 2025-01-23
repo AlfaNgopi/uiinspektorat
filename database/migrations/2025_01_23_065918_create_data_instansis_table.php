@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('komentars', function (Blueprint $table) {
+        Schema::create('data_instansis', function (Blueprint $table) {
             $table->id();
-            $table->string('username');
-            $table->string('email');
-            $table->text('context');
-            $table->timestamp('date');
-            $table->foreignId('berita_id')->constrained('beritas')->onDelete('cascade');
+            $table->string('nama_instansi');
+            $table->string('batas_token');
+            $table->boolean('status');
             $table->timestamps();
         });
     }
@@ -27,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('komentars');
+        Schema::dropIfExists('data_instansis');
     }
 };

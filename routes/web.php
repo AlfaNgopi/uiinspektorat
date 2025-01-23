@@ -40,11 +40,40 @@ Route::get('/survey', [SurveyController::class, 'index'])->name('survey');
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login/actionlogin', [AuthController::class, 'actionLogin'])->name('actionLogin');
 
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
 
-Route::get('/admin/Dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+Route::get('/admin/berita', [AdminController::class, 'berita'])->name('admin.berita');
+Route::get('/admin/berita/tambah', [AdminController::class, 'tambahBerita'])->name('admin.berita.tambah');
+Route::post('/admin/berita/actiontambahberita', [AdminController::class, 'actionTambahBerita'])->name('actionTambahBerita');
+Route::get('/admin/berita/edit/{id}', [AdminController::class, 'editBerita'])->name('admin.berita.edit');
+Route::post('/admin/berita/actioneditberita', [AdminController::class, 'actionEditBerita'])->name('actionEditBerita');
 
-Route::get('/admin/Berita', [AdminController::class, 'berita'])->name('admin.berita');
-Route::get('/admin/Berita/Tambah', [AdminController::class, 'tambahberita'])->name('admin.berita.tambah');
-Route::post('/admin/Berita/Tambah2', [AdminController::class, 'actionTambahBerita'])->name('actionTambahBerita');
+Route::get('/admin/identitas-website', [AdminController::class, 'identitasWebsite'])->name('admin.identitas-website');
+Route::post('/admin/identitas-website/actionedit', [AdminController::class, 'actionEditIdentitasWebsite'])->name('actionEditIdentitasWebsite');
+
+Route::get('/admin/menu-website', [AdminController::class, 'menuWebsite'])->name('admin.menu-website');
+Route::get('/admin/halaman-baru', [AdminController::class, 'halamanBaru'])->name('admin.halaman-baru');
+
+Route::get('/admin/kategori-berita', [AdminController::class, 'kategoriBerita'])->name('admin.kategori-berita');
+Route::get('/admin/kategori-berita/tambah', [AdminController::class, 'tambahKategoriBerita'])->name('admin.kategori-berita.tambah');
+Route::post('/admin/kategori-berita/actiontambah', [AdminController::class, 'actionTambahKategoriBerita'])->name('actionTambahKategoriBerita');
+
+Route::get('/admin/playlist-video', [AdminController::class, 'playlistVideo'])->name('admin.playlist-video');
+Route::get('/admin/video', [AdminController::class, 'video'])->name('admin.video');
+
+Route::get('/admin/galeri', [AdminController::class, 'galeri'])->name('admin.galeri');
+Route::get('/admin/gambar', [AdminController::class, 'gambar'])->name('admin.gambar');
+
+Route::get('/admin/data-instansi', [AdminController::class, 'dataInstansi'])->name('admin.data-instansi');
+Route::get('/admin/kuisioner', [AdminController::class, 'kuisioner'])->name('admin.kuisioner');
+Route::get('/admin/hasil-laporan', [AdminController::class, 'hasilLaporan'])->name('admin.hasil-laporan');
+
+Route::get('/admin/komentar', [AdminController::class, 'komentar'])->name('admin.komentar');
+Route::get('/admin/sensor-komentar', [AdminController::class, 'sensorKomentar'])->name('admin.sensor-komentar');
+
+Route::get('/admin/carousel', [AdminController::class, 'carousel'])->name('admin.carousel');
+Route::get('/admin/jejak-pendapat', [AdminController::class, 'jejakPendapat'])->name('admin.jejak-pendapat');
+Route::get('/admin/download-area', [AdminController::class, 'downloadArea'])->name('admin.download-area');
+Route::get('/admin/link-aduan', [AdminController::class, 'linkAduan'])->name('admin.link-aduan');
 
 

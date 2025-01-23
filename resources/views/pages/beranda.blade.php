@@ -83,13 +83,13 @@
                             <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded mb-3" style="min-height: 215px;">
                                 <div class="row g-0">
                                     <div class="col-md-4 news-card-img">
-                                        <img src="{{asset($berita['img'])}}" class="img-fluid rounded-start" alt="...">
+                                        <img src="{{asset($berita['img'])}}" class="img-fluid rounded-start asprat" alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title text-truncate-3">{{ $berita['title'] }}</h5>
                                             <p class="card-text text-truncate-3">
-                                                {{ $berita['text'] }}
+                                                {{ $berita['context'] }}
                                             </p>
                                         </div>
                                     </div>
@@ -196,10 +196,10 @@
                 <div class="d-flex" style="justify-content: space-evenly;">
                     @foreach($beritaredaksis1 as $berita)
                     <div class="card mx-2" style="width: 18rem;">
-                        <img src="{{asset($berita['img'])}}" class="card-img-top" alt="Card Image">
+                        <img src="{{asset($berita['img'])}}" class="card-img-top asprat-4-3" alt="Card Image">
                         <div class="card-body">
                             <h5 class="text-truncate-2">{{$berita['title']}}</h5>
-                            <p class="card-text text-truncate-3">{{$berita['text']}}</p>
+                            <p class="card-text text-truncate-3">{{$berita['context']}}</p>
 
                         </div>
                     </div>
@@ -213,10 +213,10 @@
                 <div class="d-flex" style="justify-content: space-evenly;">
                     @foreach($beritaredaksis1 as $berita)
                     <div class="card mx-2" style="width: 18rem;">
-                        <img src="{{asset($berita['img'])}}" class="card-img-top" alt="Card Image">
+                        <img src="{{asset($berita['img'])}}" class="card-img-top asprat-4-3" alt="Card Image">
                         <div class="card-body">
                             <h5 class="text-truncate-2">{{$berita['title']}}</h5>
-                            <p class="card-text text-truncate-3">{{$berita['text']}}</p>
+                            <p class="card-text text-truncate-3">{{$berita['context']}}</p>
 
                         </div>
                     </div>

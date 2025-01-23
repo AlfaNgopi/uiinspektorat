@@ -88,7 +88,7 @@
                     <div class="col-lg-8">
                         <p class="card-title text-truncate-2 m-0 ">{{$berita['title']}}</p>
 
-                        <div class="news-tags ">{{$berita['kategori']}}</div>
+                        <div class="news-tags ">{{$berita['kategori_name']}}</div>
                     </div>
 
                 </div>

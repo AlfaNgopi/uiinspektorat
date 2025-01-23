@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('komentars', function (Blueprint $table) {
+        Schema::create('jejak_pendapats', function (Blueprint $table) {
             $table->id();
-            $table->string('username');
-            $table->string('email');
-            $table->text('context');
-            $table->timestamp('date');
-            $table->foreignId('berita_id')->constrained('beritas')->onDelete('cascade');
+            $table->string('pilihan');
+            $table->string('tipe');
+            $table->integer('rating');
+            $table->boolean('aktif');
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('komentars');
+        Schema::dropIfExists('jejak_pendapats');
     }
 };

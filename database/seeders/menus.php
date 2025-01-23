@@ -21,6 +21,7 @@ class menus extends Seeder
         $galeri = MenuItem::create(['text' => 'Galeri', 'url' => '/gallerys']);
         $video = MenuItem::create(['text' => 'Video', 'url' => '/videos']);
         $download = MenuItem::create(['text' => 'Download', 'url' => '/download']);
+        $berita = MenuItem::create(['text' => 'Berita', 'url' => '/berita']);
         $informasiPublik = MenuItem::create(['text' => 'Informasi Publik', 'url' => null]);
         $hubungiKami = MenuItem::create(['text' => 'Hubungi Kami', 'url' => '/hubungi']);
 

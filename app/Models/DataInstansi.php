@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Berita_kategori extends Model
+class DataInstansi extends Model
 {
-    protected $table = 'berita_kategoris';
+    protected $table = 'data_instansis';
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'name',
-        'article_count',
-        'active',
+        'nama_instansi',
+        'batas_token',
+        'status',
     ];
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\DataInstansi;
 use App\Models\User;
 use Database\Seeders\user as SeedersUser;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -27,6 +28,7 @@ class DatabaseSeeder extends Seeder
             documents::class,
             downloadables::class,
             menus::class,
+            BeritaKategoriSeeder::class,
             beritas::class,
             galleries::class,
             gambars::class,
@@ -34,6 +36,9 @@ class DatabaseSeeder extends Seeder
             playlists::class,
             videos::class,
             SeedersUser::class,
+            DataInstansiSeeder::class,
+            JejakPendapatSeeder::class,
+
         ]);
     }
 }

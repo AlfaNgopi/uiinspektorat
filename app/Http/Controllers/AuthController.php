@@ -35,7 +35,7 @@ class AuthController extends Controller
             $request->session()->regenerate();
 
             // Redirect to intended page or dashboard
-            return redirect('admin/Dashboard');
+            return redirect('admin/dashboard');
         }
         $user = \App\Models\User::where('name', $request->name)->first();
         if ($user && Hash::check($request->password, $user->password)) {

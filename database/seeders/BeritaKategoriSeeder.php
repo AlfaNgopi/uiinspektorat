@@ -13,7 +13,7 @@ class BeritaKategoriSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('berita_kategori')->insert([
+        DB::table('berita_kategoris')->insert([
             ['name' => 'Sekretariat', 'article_count' => 0, 'active' => 1],
             ['name' => 'Irban 1', 'article_count' => 0, 'active' => 1],
             ['name' => 'Irban 2', 'article_count' => 0, 'active' => 1],

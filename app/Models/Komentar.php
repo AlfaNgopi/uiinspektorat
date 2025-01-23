@@ -14,9 +14,15 @@ class Komentar extends Model
         'email',
         'context',
         'date',
+        'berita_id',
         
         
     ];
+
+    public function berita()
+    {
+        return $this->belongsTo(Berita::class, 'berita_id');
+    }
 
     
 }

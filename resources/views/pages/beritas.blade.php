@@ -23,10 +23,10 @@
                     <div class="custom-horizontal-list" style="max-width: 80%;">
                         @foreach($kategoris as $kategori)
                         <li>
-                            @if($currentKategori == $kategori['name'])
+                            @if($currentKategori == $kategori['id'])
                             <div class="btn btn-current">{{$kategori['name']}}</div>
                             @else
-                            <a href="/berita/kategori/{{$kategori['name']}}" class="btn btn-outline-primary">{{$kategori['name']}}</a>
+                            <a href="/berita/kategori/{{$kategori['id']}}" class="btn btn-outline-primary">{{$kategori['name']}}</a>
                             @endif
                         </li>
                         @endforeach
@@ -72,7 +72,7 @@
                                 <h5 class="card-title text-truncate-2">{{$berita['title']}}</h5>
                                 <div class="custom-horizontal-list sub-info">
                                     <li style="padding: 0; margin: 0;">
-                                        <p class="d-flex " style="margin: 0"><i class="bi bi-person mx-2"></i> {{$berita['author']}}</p>
+                                        <p class="d-flex " style="margin: 0"><i class="bi bi-person mx-2"></i> {{$berita['author_name']}}</p>
                                         </p>
                                     </li>
 
@@ -80,13 +80,13 @@
                                         <p class="d-flex" style="margin: 0"><i class="bi bi-clock mx-2"></i> {{$berita['date']}} </p>
                                     </li>
                                     <li style="padding: 0; margin: 0;">
-                                        <div class="news-tags">{{$berita['kategori']}}</div>
+                                        <div class="news-tags">{{$berita['kategori_name']}}</div>
                                     </li>
 
 
 
                                 </div>
-                                <p class="card-text text-truncate-4">{{$berita['text']}}</p>
+                                <p class="card-text text-truncate-4">{{$berita['context']}}</p>
 
                             </div>
                         </div>

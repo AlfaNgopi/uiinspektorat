@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Berita;
+use App\Models\Berita_kategori;
 use App\Models\Menu;
 use App\Models\MenuItem;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class CommonFunction extends Controller
@@ -32,22 +35,7 @@ class CommonFunction extends Controller
     }
 
 
-    public static function beritasSidebar()
-    {
-        $path = storage_path('app/beritas.json');
-        if (!file_exists($path)) {
-            abort(404, 'File not found');
-        }
-
-        $json = file_get_contents($path);
-        $beritas = json_decode($json, true);
-        $beritas = array_slice($beritas, -6);
-        foreach ($beritas as &$berita) {
-            $berita['link'] = strtolower(str_replace(' ', '-', $berita['title']));
-        }
-
-        return $beritas;
-    }
+    
 
     public static function getAdminSidebar(){
         $path = storage_path('app/adminsidebar.json');
@@ -65,18 +53,7 @@ class CommonFunction extends Controller
 
     public static function getKategori()
     {
-        $path = storage_path('app/beritakategoris.json');
-        if (!file_exists($path)) {
-            abort(404, 'File not found');
-        }
-
-        $json = file_get_contents($path);
-
-        $kategoris = json_decode($json, true);
-
-        if (json_last_error() !== JSON_ERROR_NONE) {
-            abort(500, 'Error decoding JSON');
-        }
+        $kategoris = Berita_kategori::all()->toArray();
 
         return $kategoris;
     }
@@ -87,5 +64,37 @@ class CommonFunction extends Controller
         }
         return $items;
         
+    }
+
+    public static function addKategoriName($items){
+        $kategoris = Berita_kategori::all()->pluck('name', 'id');
+        foreach ($items as &$item) {
+            $item['kategori_name'] = $kategoris[$item['category']];
+        }
+        return $items;
+    }
+
+    public static function addAuthorName($items){
+        $authors = User::all()->pluck('name', 'id');
+        foreach ($items as &$item) {
+            $item['author_name'] = $authors[$item['author_id']];
+        }
+        return $items;
+    }
+
+    public static function beritasSidebar()
+    {
+        $beritas = Berita::all()->toArray();
+        $beritas = array_slice($beritas, -6);
+        foreach ($beritas as &$berita) {
+            $berita['link'] = strtolower(str_replace(' ', '-', $berita['title']));
+        }
+
+        $kategoris = Berita_kategori::all()->pluck('name', 'id');
+        foreach ($beritas as &$berita) {
+            $berita['kategori_name'] = $kategoris[$berita['category']];
+        }
+
+        return $beritas;
     }
 }

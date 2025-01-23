@@ -22,10 +22,10 @@
             <li class="nav-item">
 
                 @if($pagename == $m['name'])
-                <a href="{{$m['name']}}" class="nav-link active">
-                    @else
-                    <a href="{{$m['name']}}" class="nav-link active">
-                        @endif
+                <a href="{{route($m['link'])}}" class="nav-link active">
+                @else
+                <a href="{{route($m['link'])}}" class="nav-link">
+                @endif
                         <i class="nav-icon {{$m['icon']}}"></i>
                         <p>
                             {{$m['name']}}
@@ -34,10 +34,12 @@
 
             </li>
             @else
-            <li class="nav-item menu">
+            
                 @if($pagename == $m['name'])
+                <li class="nav-item menu menu-open">
                 <a href="#" class="nav-link active">
                     @else
+                    <li class="nav-item">
                     <a href="#" class="nav-link">
                         @endif
                         <i class="nav-icon {{$m['icon']}}"></i>
@@ -50,21 +52,27 @@
                         @foreach($m['sub_menu'] as $sm)
                         <li class="nav-item">
                             @if($subpagename == $sm['name'])
-                            @if($sm['link'] == '#')
-                            <a href="#" class="nav-link active">
+                                @if($sm['link'] == '#')
+                                <!-- 1 -->
+                                <a href="#" class="nav-link active">
                                 @else
-                                <a href="{{$sm['link']}}" class="nav-link active">
-                                    @endif
+                                <!-- 2 -->
+                                <a href="{{route($sm['link'])}}" class="nav-link active">
+                                @endif
                             @else
-                                    @if($sm['link'] == '#')
+                                @if($sm['link'] == '#')
+                                    <!-- 3 -->
                                     <a href="#" class="nav-link">
-                                        @else
-                                        <a href="{{route($sm['link'])}}" class="nav-link">
-                                            @endif
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>{{$sm['name']}}</p>
-                                        </a>
-                                        @endif
+                                @else
+                                    <!-- 4 -->
+                                    <a href="{{route($sm['link'])}}" class="nav-link">
+                                @endif
+                                
+                            
+                            @endif
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>{{$sm['name']}}</p>
+                            </a>
 
                         </li>
                         @endforeach

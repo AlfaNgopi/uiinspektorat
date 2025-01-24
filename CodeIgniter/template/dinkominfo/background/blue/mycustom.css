@@ -1,0 +1,87 @@
+#cusform input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#cusform input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#cusform input[type=text], input[type=date], input[type=email], textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  min-height: 45px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------ */
+
+/* #cusform .statement {
+  display:block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left:40px;
+  margin-top:30px;
+  margin-bottom:10px;
+}
+#cusform .likert {
+  list-style:none;
+  width:100%;
+  margin:0;
+  padding:0 0 35px;
+  display:block;
+  border-bottom:2px solid #efefef;
+}
+#cusform .likert:last-of-type {border-bottom:0;}
+#cusform .likert:before {
+  content: '';
+  position:relative;
+  top:11px;
+  left:9.5%;
+  display:block;
+  background-color:#efefef;
+  height:4px;
+  width:78%;
+}
+#cusform .likert li {
+  display:inline-block;
+  width:19%;
+  text-align:center;
+  vertical-align: top;
+}
+#cusform .likert li input[type=radio] {
+  display:block;
+  position:relative;
+  top:0;
+  left:50%;
+  margin-left:-6px;
+  
+}
+#cusform .likert li label {width:100%;}
+#cusform .buttons {
+  margin:30px 0;
+  padding:0 4.25%;
+  text-align:right
+} 
+#cusform .buttons button {
+  padding: 5px 10px;
+  background-color: #67ab49;
+  border: 0;
+  border-radius: 3px;
+}
+#cusform .buttons .clear {background-color: #e9e9e9;}
+#cusform .buttons .submit {background-color: #67ab49;} 
+#cusform .buttons .clear:hover {background-color: #ccc;}
+#cusform .buttons .submit:hover {background-color: #14892c;}  */
+
+
+/* ------------------------------------- */

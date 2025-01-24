@@ -14,7 +14,7 @@ class Playlist extends Model
         'cover',
         'context',
         'is_active',
-        'author',
+        'author_id',
         'date',
         
     ];

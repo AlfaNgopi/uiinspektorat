@@ -1,0 +1,47 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2024-08-20 04:14:55 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:14:55 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:14:55 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:16:39 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:16:39 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:16:39 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:17:41 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:17:41 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:17:41 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:18:43 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:18:43 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:18:43 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 11:32:25 --> Severity: error --> Exception: Object of class Model_pemkab could not be converted to string /home/inspektoratpurwo/public_html/baru/application/models/Model_pemkab.php 23
+ERROR - 2024-08-20 04:35:45 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:35:46 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:35:46 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:41:52 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:41:52 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:41:52 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:45:06 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:45:06 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:45:07 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:51:29 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:51:29 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 04:51:29 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 05:49:24 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 05:49:24 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 05:49:24 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 06:56:25 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 06:56:26 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 06:56:26 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 06:56:33 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-20 06:56:33 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-20 06:57:09 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 06:57:09 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 06:57:09 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 07:00:20 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-20 07:00:21 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-20 07:00:37 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-20 07:00:37 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-20 07:00:57 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-20 07:00:57 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-20 11:07:35 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 11:07:53 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-20 11:07:53 --> 404 Page Not Found: Template/dinkominfo

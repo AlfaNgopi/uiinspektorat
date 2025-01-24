@@ -29,7 +29,7 @@
                         <tbody>
                             @foreach($formfields as $formfield)
                             <tr>
-                                <th width="120px" scope="row">{{$formfield['name']}}</th>
+                                <th width="150px" scope="row">{{$formfield['formname']}}</th>
                                 @if($formfield['type'] == 'string')
                                 <td><input type="text" class="form-control" name="{{$formfield['name']}}" value="{{$formfield['value']}}"></td>
                                 @elseif($formfield['type'] == 'textarea')
@@ -48,11 +48,13 @@
                                     <p>current file = {{$formfield['value']}}</p>
                                 </td>
                                 @elseif($formfield['type'] == 'option')
-                                <td><select name="{{$formfield['name']}}" class="form-control" required="">
+                                <td><select style="max-width: 500px;" name="{{$formfield['name']}}" class="form-control" required="">
                                         @foreach($formfield['options'] as $option)
                                         <option value="{{$option['value']}}">{{$option['name']}}</option>
                                         @endforeach
                                     </select></td>
+                                @elseif($formfield['type'] == 'date')
+                                <td><input type="date" class="form-control" name="{{$formfield['name']}}" value="{{$formfield['value']}}"></td>
                                 @endif
                             </tr>
                             @endforeach

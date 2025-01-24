@@ -1,0 +1,34 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2024-10-05 00:15:21 --> 404 Page Not Found: Captcha/1727990084.8352.jpg
+ERROR - 2024-10-05 02:42:26 --> 404 Page Not Found: Captcha/1727884531.558.jpg
+ERROR - 2024-10-05 02:57:55 --> 404 Page Not Found: Captcha/1728004816.4698.jpg
+ERROR - 2024-10-05 03:56:24 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 05:43:18 --> 404 Page Not Found: Captcha/1727827180.8458.jpg
+ERROR - 2024-10-05 07:21:56 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 07:24:48 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 08:10:43 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 08:10:44 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 08:10:44 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 08:11:06 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 08:11:12 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 08:11:14 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 09:16:21 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 09:16:21 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 09:16:22 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 09:16:23 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 09:16:24 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 09:24:59 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 09:26:57 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 09:27:00 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 11:41:51 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 11:41:57 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 12:33:25 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 13:22:38 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-10-05 13:48:12 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-10-05 13:48:12 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-10-05 13:49:51 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-10-05 13:49:51 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-10-05 15:11:57 --> 404 Page Not Found: Captcha/1727871231.4903.jpg
+ERROR - 2024-10-05 18:58:04 --> 404 Page Not Found: Captcha/1727937042.4177.jpg
+ERROR - 2024-10-05 20:50:37 --> 404 Page Not Found: Template/dinkominfo

@@ -59,7 +59,11 @@ Route::get('/admin/kategori-berita/tambah', [AdminController::class, 'tambahKate
 Route::post('/admin/kategori-berita/actiontambah', [AdminController::class, 'actionTambahKategoriBerita'])->name('actionTambahKategoriBerita');
 
 Route::get('/admin/playlist-video', [AdminController::class, 'playlistVideo'])->name('admin.playlist-video');
+
+
 Route::get('/admin/video', [AdminController::class, 'video'])->name('admin.video');
+Route::get('/admin/video/tambah', [AdminController::class, 'tambahVideo'])->name('admin.video.tambah');
+Route::post('/admin/video/actiontambah', [AdminController::class, 'actionTambahVideo'])->name('actionTambahVideo');
 
 Route::get('/admin/galeri', [AdminController::class, 'galeri'])->name('admin.galeri');
 Route::get('/admin/gambar', [AdminController::class, 'gambar'])->name('admin.gambar');

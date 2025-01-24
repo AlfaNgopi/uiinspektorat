@@ -1,0 +1,94 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2024-08-29 01:15:49 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 01:15:50 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 01:15:50 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 01:17:42 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 01:17:42 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 01:17:42 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 01:17:42 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2024-08-29 01:17:58 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 01:17:58 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 01:17:58 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 01:17:58 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2024-08-29 08:02:06 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:02:07 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:02:07 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:02:07 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2024-08-29 08:02:15 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:02:15 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:02:15 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:02:41 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:02:41 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:02:41 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:03:38 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:03:38 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 08:03:38 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 11:01:36 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 11:01:36 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 11:01:51 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 11:01:51 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 11:02:04 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 11:02:04 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 11:02:15 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 11:02:15 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 11:02:42 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2024-08-29 18:03:12 --> The path to the image is not correct.
+ERROR - 2024-08-29 18:03:12 --> Your server does not support the GD function required to process this type of image.
+ERROR - 2024-08-29 11:03:16 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2024-08-29 18:03:21 --> The provided image is not valid.
+ERROR - 2024-08-29 18:03:21 --> Your server does not support the GD function required to process this type of image.
+ERROR - 2024-08-29 11:03:23 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2024-08-29 18:03:33 --> The path to the image is not correct.
+ERROR - 2024-08-29 18:03:33 --> Your server does not support the GD function required to process this type of image.
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:01 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:02 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:20 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:20 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:20 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:21 --> 404 Page Not Found: Asset/foto_user
+ERROR - 2024-08-29 11:04:35 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 11:04:36 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 11:04:36 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 11:04:42 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 11:04:42 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 11:04:42 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 11:56:21 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 11:56:22 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 11:56:22 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 12:50:08 --> 404 Page Not Found: Captcha/1724920336.6272.jpg
+ERROR - 2024-08-29 20:07:48 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 20:07:48 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 20:07:48 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 20:07:48 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 22:42:26 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 22:42:27 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 22:42:27 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2024-08-29 22:42:45 --> 404 Page Not Found: Asset/admin_mu
+ERROR - 2024-08-29 22:42:45 --> 404 Page Not Found: Asset/admin_mu

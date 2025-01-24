@@ -1,4 +1,3 @@
-<!-- jshint ignore: start -->
 
 <div class="bannertop">
 
@@ -13,4 +12,3 @@
     </div>
 </div>
 
-<!-- jshint ignore: end  -->

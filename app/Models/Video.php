@@ -14,7 +14,7 @@ class Video extends Model
         'playlist',
         'youtube_link',
         'context',
-        'author',
+        'author_id',
         'date',
         
     ];

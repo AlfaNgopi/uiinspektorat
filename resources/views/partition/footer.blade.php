@@ -1,5 +1,3 @@
-<!--  -->
-<!-- @ts-ignore -->
 <div class="custom-footer p-5 pb-1" style="background-position: center; background-blend-mode: lighten; background-repeat: no-repeat; background-image: url('{{ asset('assets/bannertop.jpg') }}');">
 
     <div class="row">

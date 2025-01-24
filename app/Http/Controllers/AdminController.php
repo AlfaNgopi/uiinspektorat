@@ -13,7 +13,6 @@ use App\Models\Komentar;
 use App\Models\Playlist;
 use App\Models\Sensor_Komentar;
 use App\Models\Video;
-use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -262,6 +261,8 @@ class AdminController extends Controller
 
         $columns = array_diff($columns, ['created_at', 'updated_at']);
 
+        $routetambah = 'admin.video.tambah';
+
         return view(
             'adminpages.common',
             [
@@ -269,9 +270,103 @@ class AdminController extends Controller
                 'subpagename' => 'Video',
                 'menu' => $sidebar,
                 'items' => $items,
-                'columns' => $columns
+                'columns' => $columns,
+                'routetambah' => $routetambah
             ]
         );
+    }
+
+    public function tambahVideo(){
+        $sidebar = CommonFunction::getAdminSidebar();
+
+        $playlist = Playlist::all()->toArray();
+
+        $version = phpversion();
+        dd($version);
+
+        $formfields = [
+            [
+                'formname' => 'Judul',
+                'name' => 'title',
+                'type' => 'string',
+                'placeholder' => 'Judul Video',
+                'value' => ''
+            ],
+            [
+                'formname' => 'Playlist',
+                'name' => 'playlist',
+                'type' => 'option',
+                'value' => '',
+
+                'options' => []
+            ],
+            [
+                'formname' => 'Link Youtube',
+                'name' => 'youtube_link',
+                'type' => 'string',
+                'placeholder' => 'https://www.youtube.com/watch?v=xxxxxxxxxxxx',
+                'value' => ''
+            ],
+            [
+                'formname' => 'Konteks',
+                'name' => 'context',
+                'type' => 'textarea',
+                'placeholder' => '',
+                'value' => ''
+            ],
+            
+            [
+                'formname' => 'Tanggal',
+                'name' => 'date',
+                'type' => 'date',
+                'value' => ''
+            ],
+        ];
+
+        foreach ($playlist as $key => $value) {
+            array_push($formfields[1]['options'], ['name' => $value['title'], 'value' => $value['id']]);
+        }
+
+        // dd($formfields);
+
+        return view(
+            'adminpages.commonform',
+            [
+                'pagename' => 'Modul Video',
+                'subpagename' => 'Tambah Video',
+                'menu' => $sidebar,
+                'formname' => 'Tambah Video',
+                'formactionroute' => 'actionTambahVideo',
+                'formfields' => $formfields
+            ]
+        );
+    }
+
+    public function actionTambahVideo(Request $request){
+        $storeData = $request->all();
+
+        $validate = Validator::make($storeData, [
+            'title' => 'required|max:255',
+            'playlist' => 'required',
+            'youtube_link' => 'required',
+            'date' => 'required',
+        ]);
+
+        if ($validate->fails()) {
+            Session()->flash('error', 'Video gagal   ditambahkan');
+
+            return redirect()->back()->withErrors($validate)->withInput();
+        }
+
+        $user = Auth::user();
+
+        $storeData['author_id'] = $user->id;
+
+        // dd($storeData);
+
+        Video::create($storeData);
+        Session()->flash('success', 'Video berhasil ditambahkan');
+        return redirect()->back();
     }
 
     public function playlistVideo(){

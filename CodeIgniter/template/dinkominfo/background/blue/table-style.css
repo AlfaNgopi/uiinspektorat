@@ -1,0 +1,72 @@
+#cusform table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+
+}
+#cusform th, td {
+  padding: 5px;
+  vertical-align:middle;
+}
+
+
+table.striped-columns tbody td:nth-of-type(odd),
+table.striped-columns th:nth-of-type(odd){
+	background: rgb(235, 227, 209);
+}
+
+#formkues th, #formkues td{
+  padding: 10px 25px 10px 25px;
+  border: 1px solid grey; 
+  vertical-align:middle;
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  #formkues table {
+    border: 0;
+  }
+
+  #formkues thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  #formkues tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  #formkues td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  #formkues td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #formkues td:last-child {
+    border-bottom: 0;
+  }
+}

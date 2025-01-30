@@ -8,7 +8,7 @@
     <meta name="author" content="" />
     <title>Inspektorat Kabupaten Purworejo</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="<?= base_url('assets/logo.png') ?>" />
+    <link rel="icon" type="image/x-icon" href="<?= base_url('asset/alfa/logo.png') ?>" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -16,24 +16,24 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="<?= base_url('css/styles.css') ?>" rel="stylesheet" />
+    <link href="<?= base_url('asset/alfa/css/styles.css') ?>" rel="stylesheet" />
 </head>
 
 <body class="bg-light">
     <!-- Include Navbar -->
-    <?= $this->include('partition/navbar') ?>
+    <?php $this->load->view('alfas/partisi/navbar', ['menus' => $data['menu']]); ?>
 
     <div class="bg-light">
-        <?= $this->renderSection('content') ?>
+        <?php if (isset($content)) echo $content; ?>
     </div>
 
     <!-- Include Footer -->
-    <?= $this->include('partition/footer') ?>
+    <?php $this->load->view('alfas/partisi/footer'); ?>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="<?= base_url('js/scripts.js') ?>"></script>
+    <script src="<?= base_url('asset/alfa/js/scripts.js') ?>"></script>
     
     
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>

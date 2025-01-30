@@ -1,4 +1,4 @@
-<div class="custom-footer p-5 pb-1" style="background-position: center; background-blend-mode: lighten; background-repeat: no-repeat; background-image: url('<?= base_url('assets/bannertop.jpg') ?>');">
+<div class="custom-footer p-5 pb-1" style="background-position: center; background-blend-mode: lighten; background-repeat: no-repeat; background-image: url('<?= base_url('asset/alfa/bannertop.jpg') ?>');">
     <div class="row">
         <div class="col-lg-4">
             <h3>Inspektorat Kabupaten Purworejo</h3>

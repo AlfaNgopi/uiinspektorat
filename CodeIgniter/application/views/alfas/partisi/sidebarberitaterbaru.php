@@ -5,6 +5,7 @@
                 Kanal Aduan
             </div>
             <div class="widget-body mb-3">
+                //todo: Add link to aduan
                 <ul class="list-unstyled">
                     <li><a style="text-decoration: none; color: #000;" href=""><i
                                 class="fa-solid fa-envelope px-2"
@@ -67,13 +68,13 @@
         <div class="card-body">
             <h5 class="card-title">Berita Terbaru</h5>
             <?php foreach ($beritasidebar as $berita): ?>
-            <a href="/berita/<?= $berita['link'] ?>" style="text-decoration: none;">
+            <a href="<?= base_url('berita/detail/' . $berita['judul_seo']); ?>" style="text-decoration: none;">
                 <div class="row news-card mt-3">
                     <div class="col-lg-4 news-card-img">
-                        <img src="<?= base_url($berita['img']) ?>" class="img-fluid asprat-4-3 rounded-start" alt="...">
+                        <img src="<?= base_url('asset/foto_berita/'.$berita["gambar"]) ?>" class="img-fluid asprat-4-3 rounded-start" alt="...">
                     </div>
                     <div class="col-lg-8">
-                        <p class="card-title text-truncate-2 m-0"><?= $berita['title'] ?></p>
+                        <p class="card-title text-truncate-2 m-0"><?= $berita['judul'] ?></p>
                         <div class="news-tags"><?= $berita['kategori_name'] ?></div>
                     </div>
                 </div>

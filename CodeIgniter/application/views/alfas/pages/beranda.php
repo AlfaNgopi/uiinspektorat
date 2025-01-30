@@ -2,9 +2,9 @@
 <div>
     <div class="masthead">
         <video autoplay muted loop class="masthead-video w-100">
-            <source src="<?= base_url('assets/homevideo.mp4'); ?>" type="video/mp4">
+            <source src="<?= base_url('asset/alfa/homevideo.mp4'); ?>" type="video/mp4">
         </video>
-        <img class="masthead-logo" src="<?= base_url('assets/inspektorat-logo.png'); ?>" alt="Logo">
+        <img class="masthead-logo" src="<?= base_url('asset/alfa/inspektorat-logo.png'); ?>" alt="Logo">
     </div>
 </div>
 
@@ -28,7 +28,7 @@
             ];
             foreach ($carouselImages as $key => $image): ?>
                 <div class="carousel-item custom-carousel <?= $key == 0 ? 'active' : ''; ?>">
-                    <img src="<?= base_url("assets/$image"); ?>" class="img-fluid d-block p-2 w-100 h-100" alt="...">
+                    <img src="<?= base_url("asset/alfa/$image"); ?>" class="img-fluid d-block p-2 w-100 h-100" alt="...">
                 </div>
             <?php endforeach; ?>
         </div>
@@ -52,18 +52,19 @@
         <div class="row">
             <div class="col-lg-9">
                 <div class="row gy-4">
+
                     <?php foreach ($beritas as $berita): ?>
                         <div class="col-lg-6 news-card custom-init-animation">
-                            <a style="text-decoration: none; color:#000" href="/berita/<?= $berita['link']; ?>">
+                            <a style="text-decoration: none; color:#000" href="/berita/<?= $berita['judul-seo']; ?>">
                                 <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded mb-3" style="min-height: 215px;">
                                     <div class="row g-0">
                                         <div class="col-md-4 news-card-img">
-                                            <img src="<?= base_url($berita['img']); ?>" class="img-fluid rounded-start asprat" alt="...">
+                                            <img src="<?= base_url('asset/foto_berita/' . $berita['gambar']); ?>" class="img-fluid rounded-start asprat" alt="...">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h5 class="card-title text-truncate-3"><?= $berita['title']; ?></h5>
-                                                <p class="card-text text-truncate-3"><?= $berita['context']; ?></p>
+                                                <h5 class="card-title text-truncate-3"><?= $berita['judul']; ?></h5>
+                                                <p class="card-text text-truncate-3"><?= $berita['sinopsis']; ?></p>
                                             </div>
                                         </div>
                                     </div>
@@ -109,8 +110,30 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="col-6">
+                                <a href="#" target="_blank">
+                                    <div class="btn widget-btn w-100 m-1"
+                                        style="background-color: #282474; color: #fff;">
+                                        <i class="fa-solid fa-file-lines"></i> DPA
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" target="_blank">
+                                    <div class="btn widget-btn w-100 m-1"
+                                        style="background-color: #282474; color: #fff;">
+                                        <i class="fa-solid fa-file-lines"></i> LKJIP
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                </div>
+                <hr>
+                <div class="widget">
+                    <script type="text/javascript" src="<?= base_url('asset/alfa/js/kom.js') ?>"></script>
+                    <div id="gpr-kominfo-widget-container"></div>
                 </div>
             </div>
         </div>
@@ -122,19 +145,38 @@
     <h1 class="text-center">Berita Pilihan Redaksi</h1>
     <div id="cardSlider" class="carousel carousel-dark slide custom-init-animation" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <?php foreach ($beritaredaksis1 as $key => $berita): ?>
-                <div class="carousel-item <?= $key == 0 ? 'active' : ''; ?>">
-                    <div class="d-flex" style="justify-content: space-evenly;">
+
+            <div class="carousel-item active">
+
+                <div class="d-flex" style="justify-content: space-evenly;">
+                    <?php foreach ($beritaredaksis1 as $key => $berita): ?>
                         <div class="card mx-2" style="width: 18rem;">
-                            <img src="<?= base_url($berita['img']); ?>" class="card-img-top asprat-4-3" alt="Card Image">
+                            <img src="<?= base_url('asset/foto_berita/' . $berita['gambar']); ?>" class="card-img-top asprat-4-3" alt="Card Image">
                             <div class="card-body">
-                                <h5 class="text-truncate-2"><?= $berita['title']; ?></h5>
-                                <p class="card-text text-truncate-3"><?= $berita['context']; ?></p>
+                                <h5 class="text-truncate-2"><?= $berita['judul']; ?></h5>
+                                <p class="card-text text-truncate-3"><?= $berita['sinopsis']; ?></p>
                             </div>
                         </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
-            <?php endforeach; ?>
+
+            </div>
+            <div class="carousel-item ">
+                <div class="d-flex" style="justify-content: space-evenly;">
+                    <?php foreach ($beritaredaksis2 as $key => $berita): ?>
+
+                        <div class="card mx-2" style="width: 18rem;">
+                            <img src="<?= base_url('asset/foto_berita/' . $berita['gambar']); ?>" class="card-img-top asprat-4-3" alt="Card Image">
+                            <div class="card-body">
+                                <h5 class="text-truncate-2"><?= $berita['judul']; ?></h5>
+                                <p class="card-text text-truncate-3"><?= $berita['sinopsis']; ?></p>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+
+                </div>
+            </div>
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#cardSlider" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>

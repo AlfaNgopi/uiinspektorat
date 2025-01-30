@@ -1,6 +1,6 @@
 <?php
 
-class BerandaController extends CI_Controller {
+class Beranda_Controller extends CI_Controller {
 
     public function __construct()
     {
@@ -13,18 +13,28 @@ class BerandaController extends CI_Controller {
     public function index()
     {
         // Get all berita
-        $beritas = $this->Model_app->view('berita')->result_array(); // Fetch data
+        $beritas = $this->Model_App->view('berita')->result_array(); // Fetch data
 
-        // Get the last 8 berita
-        $beritas = array_slice($beritas, -8);
+        
+
+
 
         // Filter redaksi berita
         $beritaredaksis = array_filter($beritas, function ($berita) {
-            return $berita['is_redaksi'] == true;
+            return $berita['headline'] == 'Y';
         });
 
-        // Get the first 3 redaksi berita
+        
+
+        // Get the last x berita
+        $beritas = array_slice($beritas, -8);
         $beritaredaksis = array_slice($beritaredaksis, -6);
+
+
+        $beritas = get_sinopsis($beritas);
+        $beritaredaksis = get_sinopsis($beritaredaksis);
+
+        
         $beritaredaksis1 = array_slice($beritaredaksis, 0, 3);
         $beritaredaksis2 = array_slice($beritaredaksis, 3, 3);
 
@@ -38,7 +48,8 @@ class BerandaController extends CI_Controller {
             'beritaredaksis1' => $beritaredaksis1,
             'beritaredaksis2' => $beritaredaksis2
         ];
+        $data2['content'] = $this->load->view('alfas/pages/beranda', $data, TRUE);
 
-        $this->load->view('pages/beranda', $data);
+        $this->load->view('alfas/main', $data2);
     }
 }

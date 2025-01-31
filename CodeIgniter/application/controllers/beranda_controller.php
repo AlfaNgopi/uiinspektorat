@@ -39,7 +39,9 @@ class Beranda_Controller extends CI_Controller {
         $beritaredaksis2 = array_slice($beritaredaksis, 3, 3);
 
         // Get the menu
-        $menus = get_menu();  // Assuming get_menu is a helper function
+        $menus = get_menu2();  // Assuming get_menu is a helper function
+
+        // dd($menus);
 
         // Load the view and pass data
         $data = [
@@ -49,6 +51,7 @@ class Beranda_Controller extends CI_Controller {
             'beritaredaksis2' => $beritaredaksis2
         ];
         $data2['content'] = $this->load->view('alfas/pages/beranda', $data, TRUE);
+        $data2['menus'] = $menus;
 
         $this->load->view('alfas/main', $data2);
     }

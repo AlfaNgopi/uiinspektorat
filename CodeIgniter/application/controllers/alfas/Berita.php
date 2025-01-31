@@ -22,7 +22,7 @@ class Berita extends CI_Controller {
             return view('/',);
         }
         // Get the menu
-        $menus = get_menu(); 
+        $menus = get_menu2(); 
         $beritasidebar = get_sidebarBerita();
 
         // Load the view and pass data
@@ -48,7 +48,7 @@ class Berita extends CI_Controller {
         $beritas = get_kategori($beritas);
 
 
-        $menus = get_menu(); 
+        $menus = get_menu2(); 
         $beritasidebar = get_sidebarBerita();
 
         $data = [
@@ -87,7 +87,7 @@ class Berita extends CI_Controller {
         $beritas = get_kategori($beritas);
 
 
-        $menus = get_menu(); 
+        $menus = get_menu2(); 
         $beritasidebar = get_sidebarBerita();
 
         $data = [
@@ -120,7 +120,7 @@ class Berita extends CI_Controller {
         $beritas = get_sinopsis($beritas);
         $beritas = get_kategori($beritas);
 
-        $menus = get_menu(); 
+        $menus = get_menu2(); 
         $beritasidebar = get_sidebarBerita();
 
         $data = [

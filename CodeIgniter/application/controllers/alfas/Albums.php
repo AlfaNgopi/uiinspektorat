@@ -21,7 +21,7 @@ class Albums extends CI_Controller
 
         // dd($albums);
 
-        $menus = get_menu();
+        $menus = get_menu2();
         $beritasidebar = get_sidebarBerita();
 
         $data = [
@@ -49,7 +49,7 @@ class Albums extends CI_Controller
 
         $gambar = $this->Model_App->view_where('gallery', ['gallery_seo' => $gambar_seo])->row_array();
 
-        $menus = get_menu();
+        $menus = get_menu2();
         $beritasidebar = get_sidebarBerita();
 
         $data = [

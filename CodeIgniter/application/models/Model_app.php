@@ -25,6 +25,14 @@ class Model_app extends CI_model{
         return $this->db->get($table);
     }
 
+    public function view_desc_limit($table,$order,$limit){
+        $this->db->select('*');
+        $this->db->from($table);
+        $this->db->order_by($order,'DESC');
+        $this->db->limit($limit);
+        return $this->db->get();
+    }
+
     public function view_ordering_limit($table,$order,$ordering,$baris,$dari){
         $this->db->select('*');
         $this->db->order_by($order,$ordering);

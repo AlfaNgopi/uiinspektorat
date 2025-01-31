@@ -15,9 +15,13 @@
 
 
                     <?php foreach ($albums as $album): ?>
-                        <a style="text-decoration: none;" href="<?php echo base_url('album/' . $album['album_seo'] . '/' . $album['first_img']); ?>">
+                        <a style="text-decoration: none;" href="<?php echo base_url('albums/' . $album['album_seo'] . '/' . $album['first_img']); ?>">
                             <div class="card mb-3 gallery-item" style="width: 15rem;">
-                                <img src="<?php echo base_url('asset/foto_album/' . $album['gbr_album']); ?>" class="card-img-top img-fluid w-100" alt="...">
+                                <?php if (!empty($album['gbr_album'])): ?>
+                                    <img src="<?php echo base_url('asset/img_album/' . $album['gbr_album']); ?>" class="card-img-top img-fluid w-100" alt="...">
+                                <?php else: ?>
+                                    <img src="<?php echo base_url('asset/img_album/no-image.jpg'); ?>" class="card-img-top img-fluid w-100" alt="...">
+                                <?php endif; ?>
                                 <div class="card-body">
                                     <p class="mb-1" style="font-size: small; color: grey;">Ada <?php echo $album['gbr_count']; ?> foto</p>
                                     <h5 class="card-title hover-primary"><?php echo $album['jdl_album']; ?></h5>

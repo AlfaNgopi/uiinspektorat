@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-2" id="mainNav">
     <div class="container">
         <a class="" style="height: 50px;" href="<?= base_url('/') ?>">
             <img class="h-100 img-fluid" src="<?= base_url('asset/alfa/inspektorat-logo.png') ?>" alt="..." />

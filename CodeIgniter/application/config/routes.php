@@ -20,28 +20,27 @@ $route = array(
     'survey' => 'survey',
 );
 
-$route['default_controller'] = 'beranda_controller';
+$route['default_controller']     = 'beranda_controller';
+$route['main']                   = 'beranda_controller';
+ 
+$route['berita/browse']          = 'alfas/berita/browse';
+$route['berita/browse/cari']     = 'alfas/berita/browsebycari';
+$route['berita/browse/(:any)']   = 'alfas/berita/browsebykategori/$1';
 
-$route['berita/browse']         = 'alfas/berita/browse';
-$route['berita/browse/cari']    = 'alfas/berita/browsebycari';
-$route['berita/browse/(:any)']  = 'alfas/berita/browsebykategori/$1';
+$route['berita/detail/(:any)']   = 'alfas/berita/detail/$1';
 
-$route['berita/detail/(:any)']  = 'alfas/berita/detail/$1';
+$route['halaman/detail/(:any)']  = 'alfas/halaman/detail/$1';
 
-$route['album']                 = 'alfas/albums/index';
-$route['album/(:any)/(:any)']   = 'alfas/albums/detail/$1/$2';
+$route['albums']                 = 'alfas/albums/index';
+$route['albums/(:any)/(:any)']   = 'alfas/albums/detail/$1/$2';
 
-// $route['berita/kategori/(:any)'] = 'beritas_controller/beritabykategori/$1';
-// $route['berita/cari/cari'] = 'beritas_controller/beritabycari';
 
-// $route['document/(:any)'] = 'document_controller/document/$1';
+$route['download']               = 'alfas/download/index';
 
-// $route['download'] = 'download_controller/index';
+$route['hubungi']                = 'alfas/hubungi/index';
 
-// $route['hubungi'] = 'hubungi_controller/hubungi';
-
-// $route['videos'] = 'video_controller/videos';
-// $route['videos/(:any)'] = 'video_controller/video/$1';
+$route['videos']                 = 'alfas/video/index';
+$route['videos/(:any)']          = 'alfas/video/detail/$1';
 
 // $route['gallerys'] = 'gambar_controller/gallerys';
 // $route['gallerys/(:any)'] = 'gambar_controller/gambar/$1';

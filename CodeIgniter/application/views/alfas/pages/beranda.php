@@ -55,7 +55,7 @@
 
                     <?php foreach ($beritas as $berita): ?>
                         <div class="col-lg-6 news-card custom-init-animation">
-                            <a style="text-decoration: none; color:#000" href="/berita/<?= $berita['judul-seo']; ?>">
+                            <a style="text-decoration: none; color:#000" href="<?= base_url('berita/detail/'.$berita['judul_seo']); ?>">
                                 <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded mb-3" style="min-height: 215px;">
                                     <div class="row g-0">
                                         <div class="col-md-4 news-card-img">

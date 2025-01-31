@@ -3,7 +3,7 @@
 <div class="container mt-5">
     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
         <div class="card-body">
-            <h2 class="card-title"><?= $albumName ?></h2>
+            <h2 class="card-title"><?= $album['jdl_album'] ?></h2>
             <div class="row">
                 <div class="col-6">
                     <div class="custom-horizontal-list">

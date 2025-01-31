@@ -1,4 +1,4 @@
-<?php $this->load->view('alfas/partisi/header', ['page' => $data['page']]); ?>
+<?php $this->load->view('alfas/partisi/header', ['page' => $page]); ?>
 
 <div class="container mt-5">
     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">

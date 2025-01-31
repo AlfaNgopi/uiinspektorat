@@ -21,7 +21,8 @@
 
 <body class="bg-light">
     <!-- Include Navbar -->
-    <?php $this->load->view('alfas/partisi/navbar', ['menus' => $data['menu']]); ?>
+    <?php $this->load->view('alfas/partisi/navbar', ['menus' => $menus]); ?>
+
 
     <div class="bg-light">
         <?php if (isset($content)) echo $content; ?>

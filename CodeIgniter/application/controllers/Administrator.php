@@ -20,7 +20,8 @@ class Administrator extends CI_Controller {
 	        redirect($this->uri->segment(1).'/index');
 	    }else{
 		    if (isset($_POST['submit'])){
-                if ($this->input->post() && (strtolower($this->input->post('security_code')) == strtolower($this->session->userdata('mycaptcha')))) {
+                // if ($this->input->post() && (strtolower($this->input->post('security_code')) == strtolower($this->session->userdata('mycaptcha')))) {
+                if ($this->input->post()) {
                     $username = $this->input->post('a',TRUE);
     			    $password = hash("sha512", md5($this->input->post('b',TRUE)));
     			    $cek = $this->model_app->cek_login($username,$password,'users');

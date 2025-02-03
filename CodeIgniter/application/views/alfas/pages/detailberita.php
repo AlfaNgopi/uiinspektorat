@@ -21,8 +21,8 @@
                         </li>
                         <li>
                             <p class="d-flex align-items-center">
-                                //todo: Add comment count
-                                <i class="bi bi-chat-dots mx-2"></i> 0 comments
+
+                                <i class="bi bi-chat-dots mx-2"></i> <?= $countComments ?> comments
                             </p>
                         </li>
                     </ul>
@@ -54,7 +54,7 @@
     <div class="row">
         <div class="col-lg-8">
             <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                <img src="<?= base_url('asset/foto_berita/'.$berita["gambar"]) ?>" class="card-img-top" alt="Image">
+                <img src="<?= base_url('asset/foto_berita/' . $berita["gambar"]) ?>" class="card-img-top" alt="Image">
                 <div class="ket-gambar text-center">
                     <?php if (!empty($berita['keterangan_gambar'])): ?>
                         <b>Keterangan Gambar:</b> <?= $berita['keterangan_gambar'] ?>
@@ -62,46 +62,43 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        <div><?= $berita['isi_berita'] ?></div>
+                    <div><?= $berita['isi_berita'] ?></div>
                     </p>
                 </div>
             </div>
 
-            //todo: Add comment section
             <section class="p-0">
                 <div class="container">
-                    <h4 class="comments-count">8 Comments</h4>
-                    <div class="comment">
-                        <div class="d-flex">
-                            <div>
-                                <h5><i class="bi bi-person"></i> Georgia Reade</h5>
-                                <span class="sub">13 Januari, 2025</span>
-                                <p>
-                                    Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. 
-                                    Est ad aut sapiente quis molestiae est qui cum soluta.
-                                </p>
+                    <h4 class="comments-count"><?= $countComments ?> Comments</h4>
+                    <?php foreach ($komentars as $komentar): ?>
+                        <div class="comment">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <img src="<?= base_url('asset/foto_user/blank.png') ?>" alt="user" class="rounded-circle" width="50">
+                                        </div>
+                                        <div class="col">
+                                            <h5><i class="bi bi-person"></i> <?= $komentar['nama_komentar'] ?></h5>
+                                            <span class="sub"><?= $komentar['tgl'] ?></span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <?= $komentar['isi_komentar'] ?>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="comment">
-                        <div class="d-flex">
-                            <div>
-                                <h5><i class="bi bi-person"></i> George Sam</h5>
-                                <span class="sub">13 Januari, 2025</span>
-                                <p>
-                                    Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et.
-                                    Est ad aut sapiente quis molestiae est qui cum soluta.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
+
                 </div>
             </section>
 
             <section class="comment-form section">
                 <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                    <form action="" method="POST">
+                    <form action="<?= base_url('alfas/komentar/submit') ?>" method="POST">
                         <h4>Post Comment</h4>
+                        <input type="hidden" name="id_berita" value="<?= $berita['id_berita'] ?>">
                         <div class="row mb-4">
                             <div class="col-sm-6 form-group">
                                 <input name="name" type="text" class="form-control" placeholder="Your Name*">
@@ -126,4 +123,3 @@
         <?php $this->load->view('alfas/partisi/sidebarberitaterbaru', ['beritasidebar' => $beritasidebar]); ?>
     </div>
 </div>
-

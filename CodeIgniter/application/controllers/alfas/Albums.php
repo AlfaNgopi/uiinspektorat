@@ -34,6 +34,7 @@ class Albums extends CI_Controller
         
 
         $data2['content'] = $this->load->view('alfas/pages/album', $data, TRUE);
+        $data2['identitas'] = get_identitas();
 
         $this->load->view('alfas/main', $data2);
 
@@ -62,6 +63,7 @@ class Albums extends CI_Controller
         ];
 
         $data2['content'] = $this->load->view('alfas/pages/gambar', $data, TRUE);
+        $data2['identitas'] = get_identitas();
 
         $this->load->view('alfas/main', $data2);
     }

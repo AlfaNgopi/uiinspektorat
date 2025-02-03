@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Inspektorat Kabupaten Purworejo</title>
+    <meta name="description" content="<?= $identitas['meta_deskripsi'] ?>" />
+	<meta name="author" content="dinkominfo">
+    <meta name="keywords" content="<?= $identitas['meta_keyword'] ?>" />
+    <title><?= $identitas['nama_website'] ?></title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="<?= base_url('asset/alfa/logo.png') ?>" />
+    <link rel="icon" type="image/x-icon" href="<?= base_url('asset/images/'. $identitas['favicon']) ?>" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -29,7 +30,7 @@
     </div>
 
     <!-- Include Footer -->
-    <?php $this->load->view('alfas/partisi/footer'); ?>
+    <?php $this->load->view('alfas/partisi/footer', ['links' => $identitas['links']]); ?>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -18,17 +18,10 @@
         </div>
         <div class="carousel-inner bg-dark">
             <?php
-            $carouselImages = [
-                'carousel1.jpg',
-                'carousel2.jpg',
-                'carousel3.jpg',
-                'carousel4.jpg',
-                'carousel5.jpg',
-                'carousel6.jpg'
-            ];
+
             foreach ($carouselImages as $key => $image): ?>
                 <div class="carousel-item custom-carousel <?= $key == 0 ? 'active' : ''; ?>">
-                    <img src="<?= base_url("asset/alfa/$image"); ?>" class="img-fluid d-block p-2 w-100 h-100" alt="...">
+                    <img src="<?= base_url("asset/foto_iklanatas/$image"); ?>" class="img-fluid d-block p-2 w-100 h-100" alt="...">
                 </div>
             <?php endforeach; ?>
         </div>
@@ -55,7 +48,7 @@
 
                     <?php foreach ($beritas as $berita): ?>
                         <div class="col-lg-6 news-card custom-init-animation">
-                            <a style="text-decoration: none; color:#000" href="<?= base_url('berita/detail/'.$berita['judul_seo']); ?>">
+                            <a style="text-decoration: none; color:#000" href="<?= base_url('berita/detail/' . $berita['judul_seo']); ?>">
                                 <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded mb-3" style="min-height: 215px;">
                                     <div class="row g-0">
                                         <div class="col-md-4 news-card-img">
@@ -73,70 +66,82 @@
                         </div>
                     <?php endforeach; ?>
                     <div class="text-end mt-3">
-                        <a href="pages_beritas.html" class="btn btn-primary">Lihat Semua Berita</a>
+                        <a href="<?= base_url('pages_beritas'); ?>" class="btn btn-primary">Lihat Semua Berita</a>
                     </div>
                 </div>
             </div>
             <!-- Sidebar -->
             <div class="col-lg-3">
                 <!-- Kanal Aduan -->
-                <div class="custom-widget custom-init-animation" style="background-color: rgb(200, 200, 200);">
-                    <div class="widget-header">Kanal Aduan</div>
+                <<div class="custom-widget" style="background-color: rgb(200, 200, 200);">
+                    <div class="widget-header">
+                        Kanal Aduan
+                    </div>
                     <div class="widget-body mb-3">
+                        //TODO: Add link to aduan
                         <ul class="list-unstyled">
-                            <li><a style="text-decoration: none; color: #000;" href="#"><i class="fa-solid fa-envelope px-2" style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor SPAN</a></li>
-                            <li><a style="text-decoration: none; color: #000;" href="#"><i class="fa-brands fa-whatsapp px-2" style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor WhatsApp</a></li>
-                            <li><a style="text-decoration: none; color: #000;" href="#"><i class="fa-brands fa-instagram px-2" style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor Instagram</a></li>
+                            <li><a style="text-decoration: none; color: #000;" href=""><i
+                                        class="fa-solid fa-envelope px-2"
+                                        style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor SPAN</a></li>
+                            <li><a style="text-decoration: none; color: #000;" href=""><i
+                                        class="fa-brands fa-whatsapp px-2"
+                                        style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor WhatsApp</a></li>
+                            <li><a style="text-decoration: none; color: #000;" href=""><i
+                                        class="fa-brands fa-instagram px-2"
+                                        style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor Instagram</a></li>
                         </ul>
                     </div>
+            </div>
+            <hr>
+            <div class="custom-widget" style="background-color: rgb(200, 200, 200);">
+                <div class="widget-header">
+                    Informasi Publik
                 </div>
-                <!-- Informasi Publik -->
-                <hr>
-                <div class="custom-widget custom-init-animation" style="background-color: rgb(200, 200, 200);">
-                    <div class="widget-header">Informasi Publik</div>
-                    <div class="widget-body">
-                        <div class="row">
-                            <div class="col-6">
-                                <a href="/document/sotk">
-                                    <div class="btn widget-btn w-100 m-1" style="background-color: #282474; color: #fff;">
-                                        <i class="fa-solid fa-file-lines"></i> SOTK
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a href="#" target="_blank">
-                                    <div class="btn widget-btn w-100 m-1" style="background-color: #282474; color: #fff;">
-                                        <i class="fa-solid fa-file-lines"></i> LHKAN
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a href="#" target="_blank">
-                                    <div class="btn widget-btn w-100 m-1"
-                                        style="background-color: #282474; color: #fff;">
-                                        <i class="fa-solid fa-file-lines"></i> DPA
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a href="#" target="_blank">
-                                    <div class="btn widget-btn w-100 m-1"
-                                        style="background-color: #282474; color: #fff;">
-                                        <i class="fa-solid fa-file-lines"></i> LKJIP
-                                    </div>
-                                </a>
-                            </div>
+                <div class="widget-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="<?= base_url('halaman/detail/sotk') ?>">
+                                <div class="btn widget-btn w-100 m-1"
+                                    style="background-color: #282474; color: #fff;">
+                                    <i class="fa-solid fa-file-lines"></i> SOTK
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="<?= base_url('halaman/detail/LHKAN') ?>">
+                                <div class="btn widget-btn w-100 m-1"
+                                    style="background-color: #282474; color: #fff;">
+                                    <i class="fa-solid fa-file-lines"></i> LHKAN
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="<?= base_url('halaman/detail/DPA') ?>">
+                                <div class="btn widget-btn w-100 m-1"
+                                    style="background-color: #282474; color: #fff;">
+                                    <i class="fa-solid fa-file-lines"></i> DPA
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="<?= base_url('halaman/detail/LKJIP') ?>" target="_blank">
+                                <div class="btn widget-btn w-100 m-1"
+                                    style="background-color: #282474; color: #fff;">
+                                    <i class="fa-solid fa-file-lines"></i> LKJIP
+                                </div>
+                            </a>
                         </div>
                     </div>
-
-                </div>
-                <hr>
-                <div class="widget">
-                    <script type="text/javascript" src="<?= base_url('asset/alfa/js/kom.js') ?>"></script>
-                    <div id="gpr-kominfo-widget-container"></div>
                 </div>
             </div>
+
+            <hr>
+            <div class="widget">
+                <script type="text/javascript" src="<?= base_url('asset/alfa/js/kom.js') ?>"></script>
+                <div id="gpr-kominfo-widget-container"></div>
+            </div>
         </div>
+    </div>
     </div>
 </section>
 
@@ -187,4 +192,96 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+</section>
+
+
+<!-- Video Grid-->
+<section class="page-section bg-light ">
+    <div class="row mx-3">
+
+
+        <div class="col-lg-8">
+            <div class="card shadow-lg p-3 mb-5 h-100 bg-body-tertiary custom-init-animation ">
+                <h2 class="card-title  text-center">Video Terbaru</h2>
+                <div class="row h-100">
+                    <div class="col-md-4 h-100 video-container">
+                        <iframe class="w-100 h-100" src="https://www.youtube.com/embed/Ys02g5xgTBs"
+                            title="Inspektorat Kabupaten Purworejo Melihat SPI Survei Penilaian Integritas Lebih Dekat"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Inspektorat Kabupaten Purworejo Melihat SPI Survei Penilaian
+                                    Integritas Lebih Dekat</h5>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                        ago</small></p>
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="/semua-video" class="btn btn-primary">Lihat Semua Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            <div
+                class="widget card shadow-lg p-3 mb-2 bg-body-tertiary border border-primary border-4 custom-init-animation">
+                <h3>Jejak Pendapat</h3>
+
+
+                <div style="color:#000; font-weight:bold;">Bagaimana Pelayanan di Inspektorat? <br></div>
+                <form method="POST" action="https://inspektorat.purworejokab.go.id/baru/polling/hasil">
+                    <input class="marginpoling" type="radio" name="pilihan" value="40">
+                    <class style="color:#666;font-size:12px;">&nbsp;&nbsp;Memuaskan<br><input class="marginpoling"
+                            type="radio" name="pilihan" value="41">
+                        <class style="color:#666;font-size:12px;">&nbsp;&nbsp;Sangat Memuaskan<br><input
+                                class="marginpoling" type="radio" name="pilihan" value="42">
+                            <class style="color:#666;font-size:12px;">&nbsp;&nbsp;Kurang Memuaskan<br><br>
+                                <center><input style="width: 110px; padding:2px" type="submit" class="simplebtn"
+                                        value="PILIH">
+
+                                    <a href="https://inspektorat.purworejokab.go.id/baru/polling">
+                                        <input style="width: 110px; padding:2px;" type="button" class="simplebtn"
+                                            value="LIHAT HASIL"></a>
+                                </center>
+                            </class>
+                        </class>
+                    </class>
+                </form>
+            </div>
+            <div class="mb-2 ">
+                <div class="widget card shadow-lg  bg-body-tertiary custom-init-animation">
+                    <a href="https://inspektorat.purworejokab.go.id/baru/survey" target="_blank">
+                        <img style="width: 100%; height: auto;"
+                            src="https://inspektorat.purworejokab.go.id/baru/asset/foto_info/survey.png"
+                            alt="Survey" class="img-fluid">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="mb-1 mx-auto" style="width: 70%;">
+
+                <div class="block card shadow-lg  bg-body-tertiary custom-init-animation +">
+                    <div class="banner">
+                        <a href="https://ppid.purworejokab.go.id/" style="width: 100%;" target="_blank">
+                            <img src="https://inspektorat.purworejokab.go.id/baru/asset/foto_pasangiklan/ppid1.png"
+                                alt="PPID Utama" class="img-fluid w-100" style="width: 100%; height: auto;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
 </section>

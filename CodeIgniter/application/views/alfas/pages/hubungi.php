@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-4 border-primary">
-                    <form action="">
+                    <form action="<?= base_url('alfas/hubungi/submit') ?>" method="post">
                         <h4>Form Pesan</h4>
 
                         <div class="row mb-4">
@@ -80,7 +80,7 @@
                         <div class="form-group d-flex justify-content-end my-4">
                             <div class="mx-2">
                                 <label for="c_message">
-                                    <img class="img-fluid" src="../src/assets/captcha.jpg" style="border: 0;" alt=""><br>
+                                    <?php echo $captcha; ?>
                                 </label>
                             </div>
                             <div class="mx-2 d-flex align-items-center">

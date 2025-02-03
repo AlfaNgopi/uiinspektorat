@@ -42,7 +42,7 @@
                     <a style="all: unset; cursor:pointer" href="<?= base_url('berita/detail/' . $berita['judul_seo']); ?>">
                         <div class="row news-card custom-init-animation">
                             <div class="col-md-4 news-card-img p-0">
-                                <img src="<?= base_url('asset/foto_berita/'.$berita['gambar']); ?>" class="img-fluid asprat-4-3 rounded-start" alt="...">
+                                <img src="<?= base_url('asset/foto_berita/' . $berita['gambar']); ?>" class="img-fluid asprat-4-3 rounded-start" alt="...">
                             </div>
                             <div class="col-8">
                                 <div style="border-width: 0;">
@@ -71,29 +71,15 @@
                 <?php endforeach; ?>
 
                 <!-- Pagination -->
-                <nav aria-label="Page navigation">
-                    <ul class="pagination">
-                        <?php if ($pagination['current_page'] > 1): ?>
-                            <li class="page-item">
-                                <a class="page-link" href="<?= current_url() . '?page=' . ($pagination['current_page'] - 1); ?>" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                        <?php endif; ?>
+                <nav aria-label="Page navigation example" class="mt-2">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="?page=<?= $currentpage - 1 ?>">Previous</a>
+                        </li>
 
-                        <?php for ($i = 1; $i <= $pagination['last_page']; $i++): ?>
-                            <li class="page-item <?= ($i == $pagination['current_page']) ? 'active' : ''; ?>">
-                                <a class="page-link" href="<?= current_url() . '?page=' . $i; ?>"><?= $i; ?></a>
-                            </li>
-                        <?php endfor; ?>
-
-                        <?php if ($pagination['current_page'] < $pagination['last_page']): ?>
-                            <li class="page-item">
-                                <a class="page-link" href="<?= current_url() . '?page=' . ($pagination['current_page'] + 1); ?>" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        <?php endif; ?>
+                        <li class="page-item">
+                            <a class="page-link" href="?page=<?= $currentpage + 1 ?>">Next</a>
+                        </li>
                     </ul>
                 </nav>
 

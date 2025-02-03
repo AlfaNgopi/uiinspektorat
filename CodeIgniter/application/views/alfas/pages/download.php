@@ -19,7 +19,7 @@
                                 <td><?= htmlspecialchars($download['numbering'], ENT_QUOTES, 'UTF-8') ?></td>
                                 <td><?= htmlspecialchars($download['judul'], ENT_QUOTES, 'UTF-8') ?></td>
                                 <td><?= htmlspecialchars($download['hits'], ENT_QUOTES, 'UTF-8') ?> Kali</td>
-                                <td><a class="download-button" href="<?= base_url('asset/files/'. $download['nama_file']) ?>">Download</a></td>
+                                <td><a class="download-button" href="<?= base_url('alfas/download/downloadaction/' . $download['id_download']) ?>">Download</a></td>
                             </tr>
                         <?php endforeach; ?>
 
@@ -28,14 +28,12 @@
 
                 <nav aria-label="Page navigation example" class="mt-2">
                     <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
+                            <a class="page-link" href="?page=<?= $currentpage-1 ?>">Previous</a>
+                        </li>
+                        
+                        <li class="page-item">
+                            <a class="page-link" href="?page=<?= $currentpage+1 ?>">Next</a>
                         </li>
                     </ul>
                 </nav>

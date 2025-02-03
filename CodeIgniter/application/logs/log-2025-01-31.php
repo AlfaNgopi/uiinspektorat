@@ -215,3 +215,4 @@ ERROR - 2025-01-31 09:52:12 --> 404 Page Not Found: Template/dinkominfo
 ERROR - 2025-01-31 09:52:12 --> 404 Page Not Found: Template/dinkominfo
 ERROR - 2025-01-31 09:52:12 --> 404 Page Not Found: Template/dinkominfo
 ERROR - 2025-01-31 09:52:12 --> 404 Page Not Found: Template/dinkominfo
+ERROR - 2025-01-31 10:13:25 --> 404 Page Not Found: Asset/foto_berita

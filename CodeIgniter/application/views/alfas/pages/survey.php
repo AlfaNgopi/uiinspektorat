@@ -1,11 +1,8 @@
-@extends('main')
 
-@include('partition.header')
+<?php $this->load->view('alfas/partisi/header', ['page' => $page]); ?>
 
 <!-- Main Content-->
 <div class="container mt-5">
-
-
 
     <div class="card shadow p-3 mb-5  bg-body-tertiary rounded">
 
@@ -38,7 +35,9 @@
                                 <td><input type="text" id="kode" name="kode" class="form-control" placeholder="Masukkan Kode Token"></td>
                             </tr>
                             <tr>
-                                <td><label for="captcha" class="col-form-label"><img src="../src/assets/captcha.jpg" alt=""></label></td>
+                                <td><label for="captcha" class="col-form-label">
+                                    <?php echo $captcha; ?>
+                                </label></td>
                                 <td><input type="text" id="captcha" name="captcha" class="form-control" placeholder="Masukkan Kode disamping"></td>
                             </tr>
                             <tr>
@@ -52,6 +51,6 @@
             </div>
         </div>
 
-        @include('partition.sidebar_beritaterbaru')
+        <?php $this->load->view('alfas/partisi/sidebarberitaterbaru', ['beritasidebar' => $beritasidebar]); ?>
     </div>
 </div>

@@ -1,4 +1,17 @@
 <?php
+
+function get_identitas() 
+{
+    $ci = &get_instance();
+    $identitas = $ci->db->query("SELECT * FROM identitas")->row_array();
+
+    $links = $ci->db->query("SELECT * FROM banner")->result_array();
+
+    $identitas['links'] = $links;
+
+    return $identitas;
+}
+
 function get_menu2()
 {
     $ci = &get_instance();
@@ -14,7 +27,8 @@ function get_menu2()
     return $menu;
 }
 
-function buildMenuTree($menuItems, $parentId = 0) {
+function buildMenuTree($menuItems, $parentId = 0)
+{
     $branch = [];
     foreach ($menuItems as $menu) {
         if ($menu['id_parent'] == $parentId) {
@@ -96,7 +110,6 @@ function get_embed_urls($videos)
             $url = "https://www.youtube-nocookie.com/embed/" . $match[1];
         } else {
             $url = $video['youtube'];
-
         }
         $videos[$key]['embed_url'] = $url;
     }

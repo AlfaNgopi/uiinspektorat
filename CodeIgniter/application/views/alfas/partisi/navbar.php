@@ -12,6 +12,25 @@
             <ul class="navbar-nav text-uppercase py-4 py-lg-0 justify-content-around w-100">
                 <?php $this->load->view('alfas/partisi/menu', ['menus' => $menus]); ?>
 
+                <!-- Hubungi Kami statis -->
+                <li class="nav-item dropdownhover">
+                    <a class="nav-link" aria-expanded="false" href="<?= base_url('hubungi') ?>">
+                        Hubungi Kami
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li class="nav-item nav-link"><a class="dropdown-item p-0" href=""><i
+                                    class="fa-solid fa-envelope" style="color: #fff; width: 30px"></i>Lapor
+                                SPAN</a></li>
+                        <li class="nav-item nav-link"><a class="dropdown-item p-0" href=""><i
+                                    class="fa-brands fa-whatsapp  " style="color: #fff; width: 30px"></i>Lapor
+                                Whatsapp</a></li>
+                        <li class="nav-item nav-link"><a class="dropdown-item p-0" href=""><i
+                                    class="fa-brands fa-instagram " style="color: #fff; width: 30px"></i>Lapor
+                                Instagram</a></li>
+                    </ul>
+                </li>
+
+
             </ul>
         </div>
     </div>

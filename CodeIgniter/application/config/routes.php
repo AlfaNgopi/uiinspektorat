@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 $route = array(
     'default_controller' => 'main',
@@ -20,12 +20,17 @@ $route = array(
     'survey' => 'survey',
 );
 
+
+
+// override the controller to Alfas
 $route['default_controller']     = 'beranda_controller';
 $route['main']                   = 'beranda_controller';
- 
+
+$route['survey']                 = 'alfas/survey/index';
+
 $route['berita/browse']          = 'alfas/berita/browse';
 $route['berita/browse/cari']     = 'alfas/berita/browsebycari';
-$route['berita/browse/(:any)']   = 'alfas/berita/browsebykategori/$1';
+$route['berita/browse/kategori/(:any)']   = 'alfas/berita/browsebykategori/$1';
 
 $route['berita/detail/(:any)']   = 'alfas/berita/detail/$1';
 
@@ -41,6 +46,9 @@ $route['hubungi']                = 'alfas/hubungi/index';
 
 $route['videos']                 = 'alfas/video/index';
 $route['videos/(:any)']          = 'alfas/video/detail/$1';
+
+$route['polling']                 = 'alfas/polling/index';
+
 
 // $route['gallerys'] = 'gambar_controller/gallerys';
 // $route['gallerys/(:any)'] = 'gambar_controller/gambar/$1';

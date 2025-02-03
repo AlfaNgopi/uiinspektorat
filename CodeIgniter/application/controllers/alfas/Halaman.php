@@ -24,17 +24,27 @@ class Halaman extends CI_Controller
 
         $menus = get_menu2();
         $beritasidebar = get_sidebarBerita();
+        $identitas = get_identitas();
+
+        // dd($identitas);
 
         $data = [
             'page' => 'Halaman',
             'halaman' => $halaman,
             'menus' => $menus,
-            'beritasidebar' => $beritasidebar
+            'beritasidebar' => $beritasidebar,
+            'identitas' => $identitas
+
         ];
+
+        // Update the page view count
+        $halaman['dibaca'] = $halaman['dibaca'] + 1;
+        $this->Model_App->update('halamanstatis', $halaman, ['id_halaman' => $halaman['id_halaman']]);
 
         
 
         $data2['content'] = $this->load->view('alfas/pages/halaman', $data, TRUE);
+        
 
         $this->load->view('alfas/main', $data2);
 

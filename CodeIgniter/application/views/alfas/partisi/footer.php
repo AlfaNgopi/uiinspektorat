@@ -9,16 +9,16 @@
         <div class="col-lg-4">
             <h3>Link Terkait</h3>
             <ul>
-                <li><a href="https://purworejokab.go.id/">Pemkab Purworejo</a></li>
-                <li><a href="https://gol.kpk.go.id/login">Gratifikasi Online</a></li>
-                <li><a href="https://play.google.com/store/apps/details?id=id.purworejokab.aduanv2">PORJO</a></li>
-                <li><a href="https://siharka.menpan.go.id/index.php/login">LHKASN</a></li>
-                <li><a href="https://e-audit.purworejokab.go.id/">E-Audit</a></li>
+                <?php 
+                foreach ($links as $link) : ?>
+                    <li><a href="<?= $link['url'] ?>"><?= $link['judul'] ?></a></li>
+                <?php endforeach; ?>
             </ul>
         </div>
         <div class="col-lg-4">
             <h3>Media Sosial</h3>
             <ul>
+                //todo: add wa media link
                 <li><a href="#">Whatsapp</a></li>
                 <li><a href="https://www.instagram.com/inspektorat_purworejokab">Instagram</a></li>
             </ul>
@@ -27,9 +27,9 @@
 
     <hr style="border-top: 5px solid #fff;">
     <center>
-        © Copyright <b>Inspektorat Kabupaten Purworejo - 2025</b> <br>
+        © Copyright <b><?= $identitas['nama_website'] ?> - 2025</b> <br>
         Jln. Mayjend. Sutoyo No 59 Purworejo
-        <br>E-Mail: inspektorat@purworejokab.go.id <br>
+        <br>E-Mail: <?= $identitas['email'] ?> <br>
         Website: inspektorat.purworejokab.go.id
         <p></p>
     </center>

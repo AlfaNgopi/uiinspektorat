@@ -25,6 +25,13 @@ class Model_app extends CI_model{
         return $this->db->get($table);
     }
 
+    public function view_where_desc_limit($table,$data,$order,$limit){
+        $this->db->where($data);
+        $this->db->order_by($order,'DESC');
+        $this->db->limit($limit);
+        return $this->db->get($table);
+    }
+
     public function view_desc_limit($table,$order,$limit){
         $this->db->select('*');
         $this->db->from($table);
@@ -33,7 +40,7 @@ class Model_app extends CI_model{
         return $this->db->get();
     }
 
-    public function view_ordering_limit($table,$order,$ordering,$baris,$dari){
+    public function view_ordering_limit($table,$order,$ordering,$dari,$baris){
         $this->db->select('*');
         $this->db->order_by($order,$ordering);
         $this->db->limit($dari, $baris);
@@ -50,6 +57,13 @@ class Model_app extends CI_model{
     public function view_where_ordering($table,$data,$order,$ordering){
         $this->db->where($data);
         $this->db->order_by($order,$ordering);
+        $query = $this->db->get($table);
+        return $query->result_array();
+    }
+    public function view_where_ordering_limit($table,$data,$order,$ordering,$dari,$baris){
+        $this->db->where($data);
+        $this->db->order_by($order,$ordering);
+        $this->db->limit($dari, $baris);
         $query = $this->db->get($table);
         return $query->result_array();
     }

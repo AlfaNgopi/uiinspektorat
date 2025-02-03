@@ -5,7 +5,7 @@
                 Kanal Aduan
             </div>
             <div class="widget-body mb-3">
-                //todo: Add link to aduan
+                //TODO: Add link to aduan
                 <ul class="list-unstyled">
                     <li><a style="text-decoration: none; color: #000;" href=""><i
                                 class="fa-solid fa-envelope px-2"
@@ -27,7 +27,7 @@
             <div class="widget-body">
                 <div class="row">
                     <div class="col-6">
-                        <a href="/document/sotk">
+                        <a href="<?= base_url('halaman/detail/sotk') ?>">
                             <div class="btn widget-btn w-100 m-1"
                                 style="background-color: #282474; color: #fff;">
                                 <i class="fa-solid fa-file-lines"></i> SOTK
@@ -35,7 +35,7 @@
                         </a>
                     </div>
                     <div class="col-6">
-                        <a href="#">
+                        <a href="<?= base_url('halaman/detail/LHKAN') ?>">
                             <div class="btn widget-btn w-100 m-1"
                                 style="background-color: #282474; color: #fff;">
                                 <i class="fa-solid fa-file-lines"></i> LHKAN
@@ -43,7 +43,7 @@
                         </a>
                     </div>
                     <div class="col-6">
-                        <a href="#">
+                        <a href="<?= base_url('halaman/detail/DPA') ?>">
                             <div class="btn widget-btn w-100 m-1"
                                 style="background-color: #282474; color: #fff;">
                                 <i class="fa-solid fa-file-lines"></i> DPA
@@ -51,7 +51,7 @@
                         </a>
                     </div>
                     <div class="col-6">
-                        <a href="#" target="_blank">
+                        <a href="<?= base_url('halaman/detail/LKJIP') ?>" target="_blank">
                             <div class="btn widget-btn w-100 m-1"
                                 style="background-color: #282474; color: #fff;">
                                 <i class="fa-solid fa-file-lines"></i> LKJIP

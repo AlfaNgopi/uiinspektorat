@@ -19,8 +19,7 @@
                             <p class="d-flex align-items-center"><i class="bi bi-clock mx-2"></i> <?= $video['tanggal'] ?> </p>
                         </li>
                         <li>
-                            //todo: count comment
-                            <p class="d-flex align-items-center"><i class="bi bi-chat-dots mx-2"></i> 0 comments</p>
+                            <p class="d-flex align-items-center"><i class="bi bi-chat-dots mx-2"></i> <?= $countComments ?> comments</p>
                         </li>
                     </div>
                 </div>
@@ -80,29 +79,39 @@
 
             <section class="p-0">
                 <div class="container">
-                    <h4 class="comments-count">8 Comments</h4>
+                    <h4 class="comments-count"><?= $countComments ?> Comments</h4>
 
-                    <?php for ($i = 0; $i < 2; $i++): ?>
-                        <div id="comment-1" class="comment">
-                            <div class="d-flex">
-                                <div>
-                                    <h5><i class="bi bi-person"></i>Georgia Reade</h5>
-                                    <span class="sub">13 Januari, 2025</span>
+                    <?php foreach ($komentars as $komentar) :  ?>
+                        <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                            <div class="card-body">
+                                <div class="d">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <img src="<?= base_url('asset/foto_user/blank.png') ?>" alt="user" class="rounded-circle" width="50">
+                                        </div>
+                                        <div class="col">
+                                            <h5><i class="bi bi-person"></i> <?= $komentar['nama_komentar'] ?></h5>
+                                            <span class="sub"><?= $komentar['tgl'] ?></span>
+                                        </div>
+                                    </div>
                                     <p>
-                                        Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta. Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
+                                        <?= $komentar['isi_komentar'] ?>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    <?php endfor; ?>
+
+
+                    <?php endforeach; ?>
                 </div>
             </section>
 
             <section class="comment-form section">
                 <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                    <form action="">
+                    <form action="<?= base_url('alfas/video/submitcomment') ?>" method="post">
                         <h4>Post Comment</h4>
                         <p>Your email address will not be published. Required fields are marked * </p>
+                        <input type="hidden" name="id_video" value="<?= $video['id_video'] ?>">
                         <div class="row mb-4">
                             <div class="col-sm-6 form-group">
                                 <input name="name" type="text" class="form-control" placeholder="Your Name*">
@@ -111,11 +120,7 @@
                                 <input name="email" type="text" class="form-control" placeholder="Your Email*">
                             </div>
                         </div>
-                        <div class="row mb-4">
-                            <div class="col form-group">
-                                <input name="website" type="text" class="form-control" placeholder="Your Website">
-                            </div>
-                        </div>
+                        
                         <div class="row mb-4">
                             <div class="col form-group">
                                 <textarea name="comment" class="form-control" rows="5" placeholder="Your Comment*"></textarea>

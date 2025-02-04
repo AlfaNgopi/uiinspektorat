@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // 						$_SERVER['SCRIPT_NAME']);
 
 // $config['base_url'] = 'http://localhost/baru/';
-$config['base_url'] = 'http://localhost/webinsp2/CodeIgniter/';
+$config['base_url'] = 'http://localhost/webinsp2/';
 
 /*
 |--------------------------------------------------------------------------

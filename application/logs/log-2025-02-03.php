@@ -156,3 +156,21 @@ ERROR - 2025-02-03 09:21:40 --> 404 Page Not Found: Asset/foto_berita
 ERROR - 2025-02-03 15:22:29 --> Severity: error --> Exception: Call to undefined method Model_app::view__where_ordering_limit() F:\PERSONAL\Apps\Xampp\htdocs\webinsp2\CodeIgniter\application\controllers\alfas\Download.php 22
 ERROR - 2025-02-03 09:29:01 --> 404 Page Not Found: Asset/foto_berita
 ERROR - 2025-02-03 09:29:14 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-03 09:46:15 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-03 09:46:15 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-03 09:46:40 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-03 09:46:42 --> 404 Page Not Found: Berita/browse
+ERROR - 2025-02-03 09:47:01 --> 404 Page Not Found: Berita/browse
+ERROR - 2025-02-03 09:47:29 --> 404 Page Not Found: Berita/browse
+ERROR - 2025-02-03 09:48:36 --> 404 Page Not Found: Berita/browse
+ERROR - 2025-02-03 09:48:37 --> 404 Page Not Found: Berita/browse
+ERROR - 2025-02-03 09:48:58 --> 404 Page Not Found: Berita/browse
+ERROR - 2025-02-03 09:48:59 --> 404 Page Not Found: Berita/browse
+ERROR - 2025-02-03 09:49:16 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-03 09:49:19 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-03 09:49:23 --> 404 Page Not Found: Berita/browse
+ERROR - 2025-02-03 09:50:02 --> 404 Page Not Found: Berita/browse
+ERROR - 2025-02-03 09:50:05 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-03 09:50:07 --> 404 Page Not Found: Berita/browse
+ERROR - 2025-02-03 09:50:17 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-03 09:50:17 --> 404 Page Not Found: Asset/foto_berita

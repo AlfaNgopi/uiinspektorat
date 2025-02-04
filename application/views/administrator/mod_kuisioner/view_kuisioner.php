@@ -36,7 +36,7 @@
                                 };
                              echo "</td>
                               <td>";
-                                if($row["status"]==aktif){
+                                if($row["status"]=='aktif'){
                                     echo "Aktif";
                                 }else{
                                     echo "Non Aktif";

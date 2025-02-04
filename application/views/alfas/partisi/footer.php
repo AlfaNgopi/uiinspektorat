@@ -18,9 +18,9 @@
         <div class="col-lg-4">
             <h3>Media Sosial</h3>
             <ul>
-                //todo: add wa media link
+                
                 <li><a href="#">Whatsapp</a></li>
-                <li><a href="https://www.instagram.com/inspektorat_purworejokab">Instagram</a></li>
+                <li><a href="https://www.instagram.com/purworejoinskab?igsh=emo4b21vNGo2czFn" target="_blank">Instagram</a></li>
             </ul>
         </div>
     </div>

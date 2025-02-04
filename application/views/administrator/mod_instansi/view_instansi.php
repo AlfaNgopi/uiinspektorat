@@ -26,7 +26,7 @@
                               <td>$row[instansi]</td>
                               <td>$row[batas_token]</td>
                               <td>"; 
-                                if($row['status']==aktif){ echo "Aktif";} else {echo"Non Aktif";} echo"</td>
+                                if($row['status']=='aktif'){ echo "Aktif";} else {echo"Non Aktif";} echo"</td>
                               <td><center>
                                 <a class='btn btn-success btn-xs' title='Edit Data' href='".base_url().$this->uri->segment(1)."/edit_instansi/$row[id_inst]'><span class='nav-icon fas fa-edit'></span></a>
                               </center></td>

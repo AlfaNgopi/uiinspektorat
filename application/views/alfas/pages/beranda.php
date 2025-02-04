@@ -80,15 +80,19 @@
                     <div class="widget-body mb-3">
                         //TODO: Add link to aduan
                         <ul class="list-unstyled">
-                            <li><a style="text-decoration: none; color: #000;" href=""><i
+                            <li><a style="text-decoration: none; color: #000;" href="https://www.lapor.go.id/" target="_blank"><i
                                         class="fa-solid fa-envelope px-2"
                                         style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor SPAN</a></li>
                             <li><a style="text-decoration: none; color: #000;" href=""><i
                                         class="fa-brands fa-whatsapp px-2"
                                         style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor WhatsApp</a></li>
-                            <li><a style="text-decoration: none; color: #000;" href=""><i
+                            <li><a style="text-decoration: none; color: #000;" href="https://www.instagram.com/purworejoinskab?igsh=bno4dnBwaTM5cm5u" target="_blank"><i
                                         class="fa-brands fa-instagram px-2"
                                         style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor Instagram</a></li>
+                            <li><a style="text-decoration: none; color: #000;" href="https://docs.google.com/forms/d/e/1FAIpQLScQX0jTOEbVOMaxskF_KZrLkLfTDe2joEjkQ7IZwu4db8hbpw/viewform?usp=dialog" target="_blank"><i
+                                        class="fa-solid fa-user-tie px-2"
+                                        style="color: rgb(9, 0, 102); min-width: 30px"></i>Teras Pak Bejo</a></li>
+
                         </ul>
                     </div>
             </div>
@@ -108,7 +112,23 @@
                             </a>
                         </div>
                         <div class="col-6">
-                            <a href="<?= base_url('halaman/detail/LHKAN') ?>">
+                            <a href="<?= base_url('halaman/detail/sop') ?>">
+                                <div class="btn widget-btn w-100 m-1"
+                                    style="background-color: #282474; color: #fff;">
+                                    <i class="fa-solid fa-file-lines"></i> SOP
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="https://drive.google.com/drive/folders/16DwRZr6M3tESwcPx1PTWNZblMfmVQoO5?usp=drive_link" target="_blank">
+                                <div class="btn widget-btn w-100 m-1"
+                                    style="background-color: #282474; color: #fff;">
+                                    <i class="fa-solid fa-file-lines"></i> LHKPN
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="https://drive.google.com/drive/folders/1pImrpcf4ieUaqmqz2u7IJVUVlp3uRbdD?usp=drive_link" target="_blank">
                                 <div class="btn widget-btn w-100 m-1"
                                     style="background-color: #282474; color: #fff;">
                                     <i class="fa-solid fa-file-lines"></i> LHKAN
@@ -116,7 +136,7 @@
                             </a>
                         </div>
                         <div class="col-6">
-                            <a href="<?= base_url('halaman/detail/DPA') ?>">
+                            <a href="https://drive.google.com/drive/folders/1chG_l5HcPMaBYgLYxzKk55YQDBU5q39M?usp=drive_link" target="_blank">
                                 <div class="btn widget-btn w-100 m-1"
                                     style="background-color: #282474; color: #fff;">
                                     <i class="fa-solid fa-file-lines"></i> DPA
@@ -124,13 +144,14 @@
                             </a>
                         </div>
                         <div class="col-6">
-                            <a href="<?= base_url('halaman/detail/LKJIP') ?>" target="_blank">
+                            <a href="https://drive.google.com/drive/folders/1q52hRnsCPA4N8BwTIPqY54rBPy-ueif6?usp=drive_link" target="_blank">
                                 <div class="btn widget-btn w-100 m-1"
                                     style="background-color: #282474; color: #fff;">
                                     <i class="fa-solid fa-file-lines"></i> LKJIP
                                 </div>
                             </a>
                         </div>
+                        
                     </div>
                 </div>
             </div>

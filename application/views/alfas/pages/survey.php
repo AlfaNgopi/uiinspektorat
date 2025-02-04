@@ -1,4 +1,3 @@
-
 <?php $this->load->view('alfas/partisi/header', ['page' => $page]); ?>
 
 <!-- Main Content-->
@@ -10,11 +9,7 @@
             <h2 class="card-title">
                 Survey Kepuasan Mitra Pengawasan Tahun 2025 Semester 1
             </h2>
-
-
         </div>
-
-
     </div>
 
 
@@ -24,32 +19,14 @@
             <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
 
                 <div class="card-body">
-                    <h5 class="card-title"> Validasi Instansi</h5>
-                </div>
-
-                <div class="d-flex justify-content-center">
-                    <form action="">
-                        <table class="table">
-                            <tr>
-                                <td><label for="kode" class="col-form-label">Kode Token</label></td>
-                                <td><input type="text" id="kode" name="kode" class="form-control" placeholder="Masukkan Kode Token"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="captcha" class="col-form-label">
-                                    <?php echo $captcha; ?>
-                                </label></td>
-                                <td><input type="text" id="captcha" name="captcha" class="form-control" placeholder="Masukkan Kode disamping"></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><button type="submit" class="btn btn-primary">Validasi</button></td>
-                            </tr>
-                        </table>
-                    </form>
+                    <h5 class="card-text">
+                        <p></p>
+                    </h5>
                 </div>
 
             </div>
         </div>
+        
 
         <?php $this->load->view('alfas/partisi/sidebarberitaterbaru', ['beritasidebar' => $beritasidebar]); ?>
     </div>

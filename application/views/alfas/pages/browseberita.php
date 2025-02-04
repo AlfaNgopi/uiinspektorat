@@ -16,7 +16,7 @@
                                 <?php if ($currentKategori == $kategori['id_kategori']): ?>
                                     <div class="btn btn-current"><?= $kategori['nama_kategori']; ?></div>
                                 <?php else: ?>
-                                    <a href="<?= base_url('berita/browse/' . $kategori['kategori_seo']); ?>" class="btn btn-outline-primary">
+                                    <a href="<?= base_url('berita/browse/kategori/' . $kategori['kategori_seo']); ?>" class="btn btn-outline-primary">
                                         <?= $kategori['nama_kategori']; ?>
                                     </a>
                                 <?php endif; ?>

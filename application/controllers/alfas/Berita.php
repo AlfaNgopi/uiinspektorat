@@ -23,7 +23,7 @@ class Berita extends CI_Controller {
 
         if ($berita == null) {
             dd($berita);
-            return view('/',);
+            $this->load->view('/');
         }
         // Get the menu
         $menus = get_menu2(); 
@@ -76,6 +76,7 @@ class Berita extends CI_Controller {
             'kategoris' => $kategoris,
             'currentKategori' => 'all',
         ];
+
         $data2['content'] = $this->load->view('alfas/pages/browseberita', $data, TRUE);
         $data2['identitas'] = get_identitas();
 

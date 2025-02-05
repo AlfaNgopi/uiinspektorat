@@ -152,9 +152,9 @@ function get_playlist_name($videos)
     return $videos;
 }
 
-function set_numbering($downloads)
+function set_numbering($downloads, $initnumber = 1)
 {
-    $numbering = 1;
+    $numbering = $initnumber;
     foreach ($downloads as $key => $download) {
         $downloads[$key]['numbering'] = $numbering;
         $numbering++;

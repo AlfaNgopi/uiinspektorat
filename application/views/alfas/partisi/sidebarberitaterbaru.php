@@ -15,7 +15,7 @@
                     <li><a style="text-decoration: none; color: #000;" href="https://www.instagram.com/purworejoinskab?igsh=bno4dnBwaTM5cm5u" target="_blank"><i
                                 class="fa-brands fa-instagram px-2"
                                 style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor Instagram</a></li>
-                    <li><a style="text-decoration: none; color: #000;" href=""><i
+                    <li><a style="text-decoration: none; color: #000;" href="https://docs.google.com/forms/d/e/1FAIpQLScQX0jTOEbVOMaxskF_KZrLkLfTDe2joEjkQ7IZwu4db8hbpw/viewform?usp=dialog" target="_blank"><i
                                 class="fa-solid fa-user-tie px-2"
                                 style="color: rgb(9, 0, 102); min-width: 30px"></i>Teras Pak Bejo</a></li>
 

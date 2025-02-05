@@ -66,7 +66,7 @@
                         </div>
                     <?php endforeach; ?>
                     <div class="text-end mt-3">
-                        <a href="<?= base_url('pages_beritas'); ?>" class="btn btn-primary">Lihat Semua Berita</a>
+                        <a href="<?= base_url('berita/browse'); ?>" class="btn btn-primary">Lihat Semua Berita</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                         Kanal Aduan
                     </div>
                     <div class="widget-body mb-3">
-                        //TODO: Add link to aduan
+                
                         <ul class="list-unstyled">
                             <li><a style="text-decoration: none; color: #000;" href="https://www.lapor.go.id/" target="_blank"><i
                                         class="fa-solid fa-envelope px-2"

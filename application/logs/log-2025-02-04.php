@@ -81,3 +81,14 @@ ERROR - 2025-02-04 08:50:10 --> 404 Page Not Found: Asset/foto_berita
 ERROR - 2025-02-04 08:58:45 --> 404 Page Not Found: Asset/foto_berita
 ERROR - 2025-02-04 08:58:46 --> 404 Page Not Found: Asset/foto_berita
 ERROR - 2025-02-04 09:11:03 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 09:42:02 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 09:42:02 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 09:45:47 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 09:47:10 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 09:47:17 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 09:47:30 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 09:48:01 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 09:54:00 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 10:04:48 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 10:05:34 --> 404 Page Not Found: Asset/foto_berita
+ERROR - 2025-02-04 10:05:34 --> 404 Page Not Found: Asset/foto_berita

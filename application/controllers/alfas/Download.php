@@ -23,7 +23,7 @@ class Download extends CI_Controller
 
         // dd($downloads);
 
-        $downloads = set_numbering($downloads);
+        $downloads = set_numbering($downloads, $dari + 1);
         
         // dd($downloads);
 
@@ -53,10 +53,7 @@ class Download extends CI_Controller
     {
         $download = $this->Model_App->view_where('download', ['id_download' => $id_download])->row_array();
 
-        if ($download == null) {
-            
-            return view('/');
-        }
+        
         
 
         

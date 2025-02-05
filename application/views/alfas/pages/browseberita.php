@@ -34,6 +34,36 @@
         </div>
     </div>
 
+    <style>
+        .carousel-item {
+            
+            transition: 0.6s ease-in-out left;
+        }
+    </style>
+
+
+    <div class=" shadow-lg  m-3 " style="background-color: white; height: 30px;">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="h-100" style="background-color: red; "> Breaking news</div>
+            </div>
+            <div class="col-lg-10 carousel lide custom-init-animation" style="position: relative; overflow: hidden; height: 18px;" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <a class="carousel-item active" href="musrenbang-dalam-rangka-penyusunan-rencana-kerja-pemerintah-daerah-kabupaten-purworejo-tahun-2026-di-kecamatan-kemiri">* Musrenbang dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah Kabupaten Purworejo Tahun 2026 di Kecamatan Kemiri</a>
+                    <a class="carousel-item" href="musrenbang-dalam-rangka-penyusunan-rencana-kerja-pemerintah-daerah-kabupaten-purworejo-tahun-2026-di-kecamatan-kemiri">Musrenbang dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah Kabupaten Purworejo Tahun 2026 di Kecamatan Kemiri</a>
+                    <a class="carousel-item" href="musrenbang-dalam-rangka-penyusunan-rencana-kerja-pemerintah-daerah-kabupaten-purworejo-tahun-2026-di-kecamatan-kemiri">Musrenbang dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah Kabupaten Purworejo Tahun 2026 di Kecamatan Kemiri</a>
+                    <a class="carousel-item" href="musrenbang-dalam-rangka-penyusunan-rencana-kerja-pemerintah-daerah-kabupaten-purworejo-tahun-2026-di-kecamatan-kemiri">Musrenbang dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah Kabupaten Purworejo Tahun 2026 di Kecamatan Kemiri</a>
+                    <a class="carousel-item" href="musrenbang-dalam-rangka-penyusunan-rencana-kerja-pemerintah-daerah-kabupaten-purworejo-tahun-2026-di-kecamatan-kemiri">Musrenbang dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah Kabupaten Purworejo Tahun 2026 di Kecamatan Kemiri</a>
+                    <a class="carousel-item" href="musrenbang-dalam-rangka-penyusunan-rencana-kerja-pemerintah-daerah-kabupaten-purworejo-tahun-2026-di-kecamatan-kemiri">Musrenbang dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah Kabupaten Purworejo Tahun 2026 di Kecamatan Kemiri</a>
+                    <a class="carousel-item" href="musrenbang-dalam-rangka-penyusunan-rencana-kerja-pemerintah-daerah-kabupaten-purworejo-tahun-2026-di-kecamatan-kemiri">Musrenbang dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah Kabupaten Purworejo Tahun 2026 di Kecamatan Kemiri</a>
+                    <a class="carousel-item" href="musrenbang-dalam-rangka-penyusunan-rencana-kerja-pemerintah-daerah-kabupaten-purworejo-tahun-2026-di-kecamatan-kemiri">Musrenbang dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah Kabupaten Purworejo Tahun 2026 di Kecamatan Kemiri</a>
+                    <a class="carousel-item" href="musrenbang-dalam-rangka-penyusunan-rencana-kerja-pemerintah-daerah-kabupaten-purworejo-tahun-2026-di-kecamatan-kemiri">Musrenbang dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah Kabupaten Purworejo Tahun 2026 di Kecamatan Kemiri</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-lg-8">
             <div class="card shadow-lg p-4 mb-5 bg-body-tertiary rounded">

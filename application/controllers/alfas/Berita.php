@@ -56,9 +56,9 @@ class Berita extends CI_Controller {
 
         $dari = ($page - 1) * 10; // Correct OFFSET calculation
 
-        $beritas = $this->Model_App->view_where_ordering_limit('berita', ['aktif' => 'Y'], 'id_berita', 'DESC', 10, $dari);
+        $beritas = $this->Model_App->view_where_ordering_limit('berita', ['status' => 'Y'], 'id_berita', 'DESC', 10, $dari);
 
-        $kategoris = $this->Model_App->view('kategori')->result_array();
+        $kategoris = $this->Model_App->view_ordering('kategori', 'sidebar', 'ASC');
 
         $beritas = get_sinopsis($beritas);
         $beritas = get_kategori($beritas);
@@ -90,17 +90,18 @@ class Berita extends CI_Controller {
 
         $dari = ($page - 1) * 10; // Correct OFFSET calculation
 
-        $kategoris = $this->Model_App->view('kategori')->result_array();
+        $kategoris = $this->Model_App->view_ordering('kategori', 'sidebar', 'ASC');
+
 
         if ($kategori == 'all') {
             
-            $beritas = $this->Model_App->view_where_ordering_limit('berita', ['aktif' => 'Y'], 'id_berita', 'DESC', 10, $dari);
+            $beritas = $this->Model_App->view_where_ordering_limit('berita', ['status' => 'Y'], 'id_berita', 'DESC', 10, $dari);
         } else {
             $currentKategori = array_filter($kategoris, function($k) use ($kategori) {
                 return $k['kategori_seo'] == $kategori;
             });
             $currentKategori = reset($currentKategori);
-            $where = ['aktif' => 'Y', 'id_kategori' => $currentKategori['id_kategori']];
+            $where = ['status' => 'Y', 'id_kategori' => $currentKategori['id_kategori']];
             $beritas = $this->Model_App->view_where_ordering_limit('berita', $where, 'id_berita', 'DESC', 10, $dari);
         }
 
@@ -135,7 +136,7 @@ class Berita extends CI_Controller {
 
         $keyword = $this->input->get('keyword');
 
-        $kategoris = $this->Model_App->view('kategori')->result_array();
+        $kategoris = $this->Model_App->view_ordering('kategori', 'sidebar', 'ASC');
 
         $this->db->like('judul', $keyword);
         $this->db->or_like('isi_berita', $keyword);

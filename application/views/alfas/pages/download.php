@@ -19,7 +19,7 @@
                                 <td><?= htmlspecialchars($download['numbering'], ENT_QUOTES, 'UTF-8') ?></td>
                                 <td><?= htmlspecialchars($download['judul'], ENT_QUOTES, 'UTF-8') ?></td>
                                 <td><?= htmlspecialchars($download['hits'], ENT_QUOTES, 'UTF-8') ?> Kali</td>
-                                <td><a class="download-button" href="<?= base_url('alfas/download/downloadaction/' . $download['id_download']) ?>">Download</a></td>
+                                <td><a class="download-button" href="<?= base_url('alfas/download/downloadaction/' . $download['id_download']) ?>" target="_blank">Download</a></td>
                             </tr>
                         <?php endforeach; ?>
 

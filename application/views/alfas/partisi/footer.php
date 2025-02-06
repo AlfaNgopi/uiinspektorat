@@ -19,7 +19,7 @@
             <h3>Media Sosial</h3>
             <ul>
                 
-                <li><a href="#" target="_blank">Whatsapp</a></li>
+                <li><a href="https://bit.ly/Pengaduan_Inspektorat-Daerah_Purworejo" target="_blank">Whatsapp</a></li>
                 <li><a href="https://www.instagram.com/purworejoinskab?igsh=emo4b21vNGo2czFn" target="_blank">Instagram</a></li>
             </ul>
         </div>

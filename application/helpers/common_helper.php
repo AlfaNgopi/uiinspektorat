@@ -45,11 +45,23 @@ function buildMenuTree($menuItems, $parentId = 0)
 function get_sidebarBerita()
 {
     $ci = &get_instance();
-    $sidebarBerita = $ci->db->query("SELECT * FROM berita ORDER BY id_berita DESC LIMIT 6")->result_array();
+    $where = ['status' => 'Y'];
+    $sidebarBerita = $ci->db->query("SELECT * FROM berita WHERE status = 'Y' ORDER BY id_berita DESC LIMIT 6")->result_array();
 
     $sidebarBerita = get_kategori($sidebarBerita);
 
     return $sidebarBerita;
+}
+
+function get_breakingnews()
+{
+    $ci = &get_instance();
+    $where = ['headline' => 'Y', 'status' => 'Y'];
+    $breakingnews = $ci->db->query("SELECT * FROM berita WHERE headline = 'Y' AND status = 'Y' ORDER BY id_berita DESC LIMIT 5")->result_array();
+
+    $breakingnews = get_kategori($breakingnews);
+
+    return $breakingnews;
 }
 
 function get_sinopsis($beritas)

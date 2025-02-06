@@ -20,7 +20,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <link href="<?= base_url('template/dinkominfo/background/pink/main-stylesheet.css') ?>" rel="stylesheet" />
+    <script src="<?= base_url('template/dinkominfo/jscript/jquery-latest.min.js') ?>" ></script>
+    <script src="<?= base_url('template/dinkominfo/jscript/theme-scripts.js') ?>" ></script>
+
     <link href="<?= base_url('asset/alfa/css/styles.css') ?>" rel="stylesheet" />
+
 </head>
 
 <body class="bg-light">

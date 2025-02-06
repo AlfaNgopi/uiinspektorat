@@ -28,6 +28,7 @@ class Berita extends CI_Controller {
         // Get the menu
         $menus = get_menu2(); 
         $beritasidebar = get_sidebarBerita();
+        $breakingnews = get_breakingnews();
 
         // Load the view and pass data
         $data = [
@@ -36,7 +37,8 @@ class Berita extends CI_Controller {
             'komentars' => $komentars,
             'countComments' => $countComments,
             'menus' => $menus,
-            'beritasidebar' => $beritasidebar
+            'beritasidebar' => $beritasidebar,
+            'breakingnews' => $breakingnews,
             
         ];
         $data2['content'] = $this->load->view('alfas/pages/detailberita', $data, TRUE);
@@ -66,6 +68,7 @@ class Berita extends CI_Controller {
 
         $menus = get_menu2(); 
         $beritasidebar = get_sidebarBerita();
+        $breakingnews = get_breakingnews();
 
         $data = [
             'page' => 'Berita',
@@ -73,6 +76,7 @@ class Berita extends CI_Controller {
             'menus' => $menus,
             'currentpage' => $page,
             'beritasidebar' => $beritasidebar,
+            'breakingnews' => $breakingnews,
             'kategoris' => $kategoris,
             'currentKategori' => 'all',
         ];
@@ -111,6 +115,7 @@ class Berita extends CI_Controller {
 
         $menus = get_menu2(); 
         $beritasidebar = get_sidebarBerita();
+        $breakingnews = get_breakingnews();
 
         $data = [
             'page' => 'Berita',
@@ -118,6 +123,7 @@ class Berita extends CI_Controller {
             'menus' => $menus,
             'currentpage' => $page,
             'beritasidebar' => $beritasidebar,
+            'breakingnews' => $breakingnews,
             'kategoris' => $kategoris,
             'currentKategori' => $currentKategori['id_kategori'],
         ];
@@ -151,6 +157,7 @@ class Berita extends CI_Controller {
 
         $menus = get_menu2(); 
         $beritasidebar = get_sidebarBerita();
+        $breakingnews = get_breakingnews();
 
         $data = [
             'page' => 'Berita',
@@ -158,6 +165,7 @@ class Berita extends CI_Controller {
             'menus' => $menus,
             'currentpage' => $page,
             'beritasidebar' => $beritasidebar,
+            'breakingnews' => $breakingnews,
             'kategoris' => $kategoris,
             'currentKategori' => 0,
         ];

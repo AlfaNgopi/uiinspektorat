@@ -9,7 +9,7 @@
                     <li><a style="text-decoration: none; color: #000;" href="https://www.lapor.go.id/" target="_blank"><i
                                 class="fa-solid fa-envelope px-2"
                                 style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor SPAN</a></li>
-                    <li><a style="text-decoration: none; color: #000;" href=""><i
+                    <li><a style="text-decoration: none; color: #000;" href="https://bit.ly/Pengaduan_Inspektorat-Daerah_Purworejo" target="_blank"><i
                                 class="fa-brands fa-whatsapp px-2"
                                 style="color: rgb(9, 0, 102); min-width: 30px"></i>Lapor WhatsApp</a></li>
                     <li><a style="text-decoration: none; color: #000;" href="https://www.instagram.com/purworejoinskab?igsh=bno4dnBwaTM5cm5u" target="_blank"><i

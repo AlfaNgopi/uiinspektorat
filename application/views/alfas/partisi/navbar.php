@@ -18,13 +18,13 @@
                         Hubungi Kami
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
-                        <li class="nav-item nav-link"><a class="dropdown-item p-0" href=""><i
+                        <li class="nav-item nav-link"><a class="dropdown-item p-0" href="https://www.lapor.go.id/" target="_blank"><i
                                     class="fa-solid fa-envelope" style="color: #fff; width: 30px"></i>Lapor
                                 SPAN</a></li>
-                        <li class="nav-item nav-link"><a class="dropdown-item p-0" href=""><i
+                        <li class="nav-item nav-link"><a class="dropdown-item p-0" href="https://bit.ly/Pengaduan_Inspektorat-Daerah_Purworejo" target="_blank"><i
                                     class="fa-brands fa-whatsapp  " style="color: #fff; width: 30px"></i>Lapor
                                 Whatsapp</a></li>
-                        <li class="nav-item nav-link"><a class="dropdown-item p-0" href=""><i
+                        <li class="nav-item nav-link"><a class="dropdown-item p-0" href="https://www.instagram.com/purworejoinskab?igsh=bno4dnBwaTM5cm5u" target="_blank"><i
                                     class="fa-brands fa-instagram " style="color: #fff; width: 30px"></i>Lapor
                                 Instagram</a></li>
                     </ul>

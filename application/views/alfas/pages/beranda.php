@@ -104,7 +104,7 @@
                 <div class="widget-body">
                     <div class="row">
                         <div class="col-6">
-                            <a href="<?= base_url('halaman/detail/sotk') ?>">
+                            <a href="<?= base_url('halaman/detail/struktur-organisasi-dan-tata-kerja') ?>">
                                 <div class="btn widget-btn w-100 m-1"
                                     style="background-color: #282474; color: #fff;">
                                     <i class="fa-solid fa-file-lines"></i> SOTK
@@ -112,7 +112,7 @@
                             </a>
                         </div>
                         <div class="col-6">
-                            <a href="<?= base_url('halaman/detail/sop') ?>">
+                            <a href="<?= base_url('halaman/detail/standard-operating-procedure') ?>">
                                 <div class="btn widget-btn w-100 m-1"
                                     style="background-color: #282474; color: #fff;">
                                     <i class="fa-solid fa-file-lines"></i> SOP

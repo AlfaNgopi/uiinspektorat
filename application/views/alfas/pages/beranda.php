@@ -95,74 +95,74 @@
 
                         </ul>
                     </div>
-            </div>
-            <hr>
-            <div class="custom-widget" style="background-color: rgb(200, 200, 200);">
-                <div class="widget-header">
-                    Informasi Publik
                 </div>
-                <div class="widget-body">
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="<?= base_url('halaman/detail/struktur-organisasi-dan-tata-kerja') ?>">
-                                <div class="btn widget-btn w-100 m-1"
-                                    style="background-color: #282474; color: #fff;">
-                                    <i class="fa-solid fa-file-lines"></i> SOTK
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="<?= base_url('halaman/detail/standard-operating-procedure') ?>">
-                                <div class="btn widget-btn w-100 m-1"
-                                    style="background-color: #282474; color: #fff;">
-                                    <i class="fa-solid fa-file-lines"></i> SOP
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="https://drive.google.com/drive/folders/16DwRZr6M3tESwcPx1PTWNZblMfmVQoO5?usp=drive_link" target="_blank">
-                                <div class="btn widget-btn w-100 m-1"
-                                    style="background-color: #282474; color: #fff;">
-                                    <i class="fa-solid fa-file-lines"></i> LHKPN
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="https://drive.google.com/drive/folders/1pImrpcf4ieUaqmqz2u7IJVUVlp3uRbdD?usp=drive_link" target="_blank">
-                                <div class="btn widget-btn w-100 m-1"
-                                    style="background-color: #282474; color: #fff;">
-                                    <i class="fa-solid fa-file-lines"></i> LHKAN
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="https://drive.google.com/drive/folders/1chG_l5HcPMaBYgLYxzKk55YQDBU5q39M?usp=drive_link" target="_blank">
-                                <div class="btn widget-btn w-100 m-1"
-                                    style="background-color: #282474; color: #fff;">
-                                    <i class="fa-solid fa-file-lines"></i> DPA
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="https://drive.google.com/drive/folders/1q52hRnsCPA4N8BwTIPqY54rBPy-ueif6?usp=drive_link" target="_blank">
-                                <div class="btn widget-btn w-100 m-1"
-                                    style="background-color: #282474; color: #fff;">
-                                    <i class="fa-solid fa-file-lines"></i> LKJIP
-                                </div>
-                            </a>
-                        </div>
+                <hr>
+                <div class="custom-widget" style="background-color: rgb(200, 200, 200);">
+                    <div class="widget-header">
+                        Informasi Publik
+                    </div>
+                    <div class="widget-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="<?= base_url('halaman/detail/sotk') ?>">
+                                    <div class="btn widget-btn w-100 m-1"
+                                        style="background-color: #282474; color: #fff;">
+                                        <i class="fa-solid fa-file-lines"></i> SOTK
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="<?= base_url('halaman/detail/sop') ?>">
+                                    <div class="btn widget-btn w-100 m-1"
+                                        style="background-color: #282474; color: #fff;">
+                                        <i class="fa-solid fa-file-lines"></i> SOP
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="https://drive.google.com/drive/folders/16DwRZr6M3tESwcPx1PTWNZblMfmVQoO5?usp=drive_link" target="_blank">
+                                    <div class="btn widget-btn w-100 m-1"
+                                        style="background-color: #282474; color: #fff;">
+                                        <i class="fa-solid fa-file-lines"></i> LHKPN
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="https://drive.google.com/drive/folders/1pImrpcf4ieUaqmqz2u7IJVUVlp3uRbdD?usp=drive_link" target="_blank">
+                                    <div class="btn widget-btn w-100 m-1"
+                                        style="background-color: #282474; color: #fff;">
+                                        <i class="fa-solid fa-file-lines"></i> LHKAN
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="https://drive.google.com/drive/folders/1chG_l5HcPMaBYgLYxzKk55YQDBU5q39M?usp=drive_link" target="_blank">
+                                    <div class="btn widget-btn w-100 m-1"
+                                        style="background-color: #282474; color: #fff;">
+                                        <i class="fa-solid fa-file-lines"></i> DPA
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="https://drive.google.com/drive/folders/1q52hRnsCPA4N8BwTIPqY54rBPy-ueif6?usp=drive_link" target="_blank">
+                                    <div class="btn widget-btn w-100 m-1"
+                                        style="background-color: #282474; color: #fff;">
+                                        <i class="fa-solid fa-file-lines"></i> LKJIP
+                                    </div>
+                                </a>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <hr>
-            <div class="widget">
-                <script type="text/javascript" src="<?= base_url('asset/alfa/js/kom.js') ?>"></script>
-                <div id="gpr-kominfo-widget-container"></div>
+                <hr>
+                <div class="widget">
+                    <script type="text/javascript" src="<?= base_url('asset/alfa/js/kom.js') ?>"></script>
+                    <div id="gpr-kominfo-widget-container"></div>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 
@@ -256,23 +256,23 @@
 
 
                 <div style="color:#000; font-weight:bold;">Bagaimana Pelayanan di Inspektorat? <br></div>
-                <form method="POST" action="https://inspektorat.purworejokab.go.id/baru/polling/hasil">
-                    <input class="marginpoling" type="radio" name="pilihan" value="40">
-                    <class style="color:#666;font-size:12px;">&nbsp;&nbsp;Memuaskan<br><input class="marginpoling"
-                            type="radio" name="pilihan" value="41">
-                        <class style="color:#666;font-size:12px;">&nbsp;&nbsp;Sangat Memuaskan<br><input
-                                class="marginpoling" type="radio" name="pilihan" value="42">
-                            <class style="color:#666;font-size:12px;">&nbsp;&nbsp;Kurang Memuaskan<br><br>
-                                <center><input style="width: 110px; padding:2px" type="submit" class="simplebtn"
-                                        value="PILIH">
-
-                                    <a href="https://inspektorat.purworejokab.go.id/baru/polling">
-                                        <input style="width: 110px; padding:2px;" type="button" class="simplebtn"
-                                            value="LIHAT HASIL"></a>
-                                </center>
-                            </class>
+                <form method="POST" action="<?= base_url('polling/pilih'); ?>">
+                    
+                    <?php foreach ($polliing as $index => $value): ?>
+                        <input class="marginpoling" type="radio" name="jawaban_polling" value="<?= $value['id_poling']; ?>">
+                        <class style="color:#666;font-size:12px;">&nbsp;&nbsp;<?= $value['pilihan']; ?><br>
                         </class>
-                    </class>
+                    <?php endforeach; ?>
+                    
+
+                    <center>
+                        <input style="width: 110px; padding:2px" type="submit" class="simplebtn"
+                            value="PILIH">
+                        <a href="<?= base_url('polling/hasil'); ?>">
+                            <input style="width: 110px; padding:2px;" type="button" class="simplebtn"
+                                value="LIHAT HASIL"></a>
+                    </center>
+
                 </form>
             </div>
             <div class="mb-2 ">

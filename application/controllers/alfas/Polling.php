@@ -19,10 +19,7 @@ class Polling extends CI_Controller
 
 
 
-        if ($polling == null) {
-            
-            return view('/');
-        }
+        
 
         $jawabans = [];
         $total = array_sum(array_column($polling, 'rating'));
@@ -56,6 +53,25 @@ class Polling extends CI_Controller
         $this->load->view('alfas/main', $data2);
 
 
+    }
+
+    public function action()
+    {
+        $choosed = $this->input->post('jawaban_polling');
+        $polling = $this->Model_App->view_where('poling', ['status' => 'jawaban', 'aktif' => 'Y'])->result_array();
+        // dd($choosed);
+        // Update the value count
+        foreach ($polling as $key => $value) {
+            if ($value['id_poling'] == $choosed) {
+                $value['rating'] = $value['rating'] + 1;
+                // dd($value);
+                $this->Model_App->update('poling', $value, ['id_poling' => $value['id_poling']]);
+            }
+        }
+
+        redirect('polling');
+
+        
     }
 
     

@@ -47,7 +47,8 @@ $route['hubungi']                = 'alfas/hubungi/index';
 $route['videos']                 = 'alfas/video/index';
 $route['videos/(:any)']          = 'alfas/video/detail/$1';
 
-$route['polling']                 = 'alfas/polling/index';
+$route['polling/hasil']           = 'alfas/polling/index';
+$route['polling/pilih']           = 'alfas/polling/action';
 
 
 // $route['gallerys'] = 'gambar_controller/gallerys';

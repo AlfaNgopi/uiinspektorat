@@ -18,7 +18,7 @@ class Halaman extends CI_Controller
 
         if ($halaman == null) {
             
-            return view('/');
+            redirect('/');
         }
         
 

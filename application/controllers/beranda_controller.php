@@ -15,7 +15,7 @@ class Beranda_Controller extends CI_Controller {
         // Get all berita
         $beritas = $this->Model_App->view_where_desc_limit('berita', ['aktif' => 'Y'], 'id_berita', 8)->result_array(); // Fetch data
 
-        
+        $polliing = $this->Model_App->view_where('poling', ['status' => 'jawaban', 'aktif' => 'Y'])->result_array();
                 
 
         $beritaredaksis = $this->Model_App->view_where_desc_limit('berita', ['aktif' => 'Y', 'headline' => 'Y'], 'id_berita', 6)->result_array(); // Fetch data
@@ -45,7 +45,8 @@ class Beranda_Controller extends CI_Controller {
             'menus' => $menus,
             'carouselImages' => $carouselImagess,
             'beritaredaksis1' => $beritaredaksis1,
-            'beritaredaksis2' => $beritaredaksis2
+            'beritaredaksis2' => $beritaredaksis2,
+            'polliing' => $polliing
         ];
         $data2['content'] = $this->load->view('alfas/pages/beranda', $data, TRUE);
         $data2['menus'] = $menus;
